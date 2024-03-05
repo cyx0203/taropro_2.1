@@ -1,0 +1,20 @@
+.root-weapp {
+  @include _root;
+  .eHealthCard {
+    :global {
+      .selectUser--empty .selectUser--empty-btn {
+        background-color: #edf1fa;
+        border-radius: 5px * 2;
+        color: #4D88FF;
+        font-size: 18px * 2;
+        line-height:25px * 2;
+        margin: auto;
+        margin-top: 26px;
+        padding: 11px * 2 0;
+        position: relative;
+        text-indent: 12px * 2;
+        width: 345px * 2;
+      }
+    }
+  }
+}

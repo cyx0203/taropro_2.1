@@ -1,0 +1,26 @@
+.root-web {
+  @include _root;
+
+  .inquireReceipts {
+    :global {
+      .btnBorder {
+        border: 0;
+        border-radius: 10px;
+        .GGBtnList {
+          background-color: #fff;
+          .btnlist {
+            .fontClass {
+              color: #000;
+            }
+          }
+        }
+        .GGBtnList:first-child {
+          border-radius: 10px 10px 0 0;
+        }
+        .GGBtnList:last-child {
+          border-radius: 0 0 10px 10px;
+        }
+      }
+    }
+  }
+}

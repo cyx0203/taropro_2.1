@@ -1,0 +1,95 @@
+.root-weapp {
+    @include _root;
+  
+    .bodyinfoShow {
+      .titleArea {
+        @include gg-flex-layout;
+        justify-content: flex-start;
+        height: 90px;
+        .deptImg {
+          height: 60px;
+          width: 60px;
+          margin-left: 20px;
+        }
+        .deptText {
+          font-size: $gg-font-size-md;
+          margin-left: 40px;
+        }
+      }
+      .deptTitle {
+        @include gg-flex-layout;
+        justify-content: space-between;
+        font-size: $gg-font-size-lg;
+        color: #746f6f;
+        padding-left: 40px;
+        height: 90px;
+        background-image: linear-gradient(#faf5f5, #e3e2e4);
+        .goDept {
+          width: 120px;
+          height: 50px;
+          border-radius: 30px;
+          font-size: $gg-font-size-sm;
+          background-color: $gg-main-color;
+          @include gg-flex-layout;
+          color: #fff;
+          margin-right: 40px;
+        }
+      }
+      .deptArea {
+        // @include gg-flex-layout;
+        // justify-content: space-between;
+        // height: 120px;
+        .deptItem {
+          @include gg-flex-layout;
+          justify-content: space-between;
+          height: 120px;
+          .deptName {
+            margin-left: 40px;
+            font-size: $gg-font-size-md;
+            color: #746f6f;
+          }
+          .goDept {
+            width: 120px;
+            height: 50px;
+            border-radius: 30px;
+            font-size: $gg-font-size-sm;
+            background-color: $gg-main-color;
+            @include gg-flex-layout;
+            color: #fff;
+            margin-right: 40px;
+          }
+        }
+      }
+      :global {
+        .at-tabs {
+          .at-tabs__header {
+            background-image: linear-gradient(#faf5f5, #e3e2e4);
+          }
+          .at-tabs__item-underline {
+            background-color: $gg-main-color;
+            height: 8px;
+            border-radius: $gg-border-radius-md;
+            width: 80%;
+            left: 10%;
+          }
+        }
+      }
+      .question {
+        font-size: $gg-font-size-sm;
+        height: 60px;
+        color: #fff;
+        background-image: linear-gradient(to right, $gg-main-color, #ffffff);
+        @include gg-flex-layout;
+        justify-content: flex-start;
+        margin: 20px;
+        padding-left: 10px;
+        width: 100%;
+      }
+      .Textcontent {
+        font-size: $gg-font-size-sm;
+        margin: 10px 30px;
+        color: #746f6f;
+      }
+    }
+  }
+  

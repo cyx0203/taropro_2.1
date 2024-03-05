@@ -1,0 +1,58 @@
+.root-weapp {
+    @include _root;
+    
+    .satisfactionSurvey {
+        background-color: #fff;
+        // height: 100vh;
+        padding-bottom: 40px;
+        .item {
+            .title {
+                background-color: #f7f3f4;
+                font-size: $gg-font-size-normal;
+                padding: 10px 20px;
+                // margin-bottom: 15px;
+            }
+            .content {
+                padding: 0 30px;
+                :global {
+                    .at-checkbox__icon-cnt {
+                        border-radius: 0;
+                    }
+                    .at-checkbox::before {
+                        border: 0;
+                    }
+                    .at-checkbox__option + .at-checkbox__option .at-checkbox__option-wrap::after {
+                        border: 0;
+                    }
+                }
+                .radioMain {
+                    padding: 0 20px;
+                    :global {
+                        .weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before {
+                            color: #6190E8;
+                        }
+                    }
+                    .radioText {
+                        font-size: $gg-font-size-normal;
+                    }
+                }
+                .rateMain {
+                    // padding: 0 30px;
+                    display: flex;
+                    justify-content: space-around;
+                    // padding-bottom: 15px;
+                    padding: 20px 15px 35px 15px;
+                }
+                .picker_5 {
+                    padding: 20px;
+                }
+            }
+        }
+        :global {
+            .at-button--primary {
+                margin: 25px auto;
+                width: 95%;
+            }
+        }
+    }
+    }

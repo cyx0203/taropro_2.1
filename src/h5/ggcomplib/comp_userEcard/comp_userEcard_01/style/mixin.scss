@@ -1,0 +1,76 @@
+@mixin _root {
+    @include gg-flex-layout(column);
+    width:100%;
+    // margin:$gg-wingblank-md 0;
+    .card {
+        margin:$gg-wingblank-md 0;
+        border-radius: $gg-border-radius-md;
+        border:solid 1px black;
+        height:300px;
+        // width:650px;
+        width:85%;
+        .cardTop {
+            height:80%;
+            // margin:-$gg-wingblank-md -$gg-wingblank-md 0 -$gg-wingblank-md;
+            border-radius: $gg-border-radius-md $gg-border-radius-md 0 0;
+            .cardTxt {
+                position:relative;
+                top:50%;
+                left:$gg-wingblank-lg;
+                .firstRow {
+                    font-size: $font-size-lg;
+                }
+                .otherRow {
+                    font-size: $font-size-sm;
+                }
+            }
+            .ECard_content{
+                font-size: $font-size-sm;
+            }
+        }
+        .cardBottom {
+            height:20%;
+            border-radius:  0 0 $gg-border-radius-md $gg-border-radius-md;
+            display: flex;
+            align-items: center;
+            font-size: $font-size-md;
+            padding-left:$gg-wingblank-md;
+            
+            .cardRadio {
+                display: flex;
+                align-items: center;
+                // margin-left:$gg-wingblank-md;
+            }
+        }
+        .weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before {
+            content: '\EA06';
+            color: $radio-color;
+            // font-size: 50px;
+        }
+        // .weui-cells_checkbox .weui-icon-checked:before {
+        //     content: '\EA01';
+        //     color: #c9c9c9;
+        //     font-size: 50px;
+        //     display: block;
+        // }
+        .card_extend{
+            font-size: $font-size-md;
+        }
+    }
+
+    .bottombt {
+        width:650px;
+        color:$btn-txt-color;
+        // margin:40rpx 0 $gg-wingblank-md 0;
+        border-radius: $gg-border-radius-sm;
+        align-items: center;
+        .flexCenter{
+            @include gg-flex-layout;
+        .img {
+            width:50px;
+            height:50px;
+            margin-right: $gg-wingblank-md;
+        }
+    }
+    }
+}

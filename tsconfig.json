@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        // "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "rootDir": ".",
+        "jsx": "preserve",
+        // "jsxFactory": "Taro.createElement",
+        "paths": {
+            "@/GGCore/*": ["./src/core/*"],
+            "@/GGH5/*": ["./src/h5/*"],
+            "@/GGJs/*": ["./src/js/*"],
+            "@/GGCPS": ["./src/h5/components/IHCPS/index"],
+        }
+    }
+}

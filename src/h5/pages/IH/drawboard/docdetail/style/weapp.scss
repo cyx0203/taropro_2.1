@@ -1,0 +1,213 @@
+.root-weapp {
+    @include _root;
+    .GGWhiteSpace{
+        height: $gg-whitespace-md;
+    }
+
+    .GGWingBlank{
+        padding: $gg-wingblank-md;
+    }
+
+    .docdetail_main {
+        width: 100%;
+        overflow-y: auto;
+        position: relative;
+        color: $gg-font-color-text;
+        margin-top: $gg-topbar-space;
+
+        .firstcontainer {
+            // height:200px;
+            background-color: #fff;
+            border-radius: $gg-border-radius-md;
+            margin:0 0 $gg-wingblank-md 0;
+            padding: 20px;
+
+            
+        .docdetail_name {
+            font-size: $gg-font-size-lg;
+            margin-right: 30px;
+            color:$gg-font-color-text;
+        }
+        
+        .docdetail_job {
+            font-size: $gg-font-size-md;
+            color: $gg-font-color-sub;
+        }
+        
+        .docdetail_tTitle {
+            font-size: $gg-font-size-normal;
+            color:$gg-font-color-sub;
+        }
+        
+        
+        .at9 {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 20px;
+        }
+        
+        .nj {
+            //name&job
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // width: 50%;
+        }
+        
+        .icoImg {
+            border-radius:50%;
+            width: 150px;
+            height: 150px;
+        }
+        
+        .sr {
+            //service&rate
+            margin-top: 10%;
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .col1 {
+            //row第一格
+            display: flex;
+            border: solid $gg-font-color-text 1px;
+            height: 80px;
+            align-items: center; //垂直居中
+            text-align: center; //水平居中
+            justify-content: center;
+            font-size: 23px;
+            color:$gg-font-color-text;
+        }
+        
+        .col2 {
+            //row第二格
+            display: flex;
+            border-top: solid;
+            border-right: solid;
+            border-bottom: solid;
+            border-color: $gg-font-color-text;
+            border-width: 1px;
+            height: 80px;
+            align-items: center; //垂直居中
+            text-align: center; //水平居中
+            justify-content: center;
+            font-size: 23px;
+            background-color: $gg-sub-color;
+        }
+
+        .docdetail_more {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        
+        .docdetail_more_text {
+            background-color: $gg-main-light-secondary-color;
+            text-align: center;
+            padding: 2px;
+            color: #fff;
+            width: 80px;
+            border-radius: 15px;
+        }
+        
+        .web {
+            color:$gg-font-color-text;
+        }
+        
+        .docdetail_back {
+            // position: absolute;
+            padding: 30px;
+        }
+        
+        .tTitle {
+            // border:black solid;
+            width: 650px;
+            white-space: nowrap;
+            /*内容超宽后禁止换行显示*/
+            overflow: hidden;
+            /*超出部分隐藏*/
+            // word-break:break-all;
+            text-overflow: ellipsis;
+            /*文字超出部分以省略号显示*/
+            color:$gg-font-color-text;
+        }
+        
+        .tTitleD {
+            // border:black solid;
+            width: 650px;
+            white-space: normal;
+            /*内容超宽后禁止换行显示*/
+            overflow: hidden;
+            /*超出部分隐藏*/
+            word-break: break-all;
+            color:$gg-font-color-text;
+        }
+
+        .menu_block {
+            :global{
+            // background-color: violet;
+            .at-tabs__header {
+                display: block;
+                text-align: left;
+                // margin-bottom: 5px;
+                // border-radius: 15px;
+            }
+        
+            .at-tabs__item {
+                width: 21%;
+            }
+        
+            .at-tabs__item-underline {
+                background-color: $gg-secondary-color;
+                height: 8px;
+                // width: 20%;
+                margin-left: 3px;
+            }
+        
+            .at-tabs__item--active {
+                // font-size: $gg-font-size-md;
+                font-size:33px;
+                color: $gg-font-color-text;
+            }
+            }
+        }
+        
+        .appointmentTime {
+            display: flex;
+            justify-content: center;
+            background-color: $gg-sub-color;
+            margin: 20px;
+            padding: 5px;
+            font-size: $gg-font-size-md;
+            border-radius: $gg-border-radius-md;
+            color: $gg-font-color-sub;
+        }
+        
+        .appointmentType {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .appointmentTypecontent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50rpx;
+        }
+        }
+        
+        .secondcontainer {
+            // height:200px;
+            // background-color: #fff;
+            // border-radius: 15px;
+            // margin:20px 20px 0 20px;
+            // padding:20px;
+        }
+        .main_color{
+            background-color:$gg-main-color
+        }
+    }
+}

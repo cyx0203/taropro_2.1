@@ -1,0 +1,92 @@
+.root-web {
+  @include _root;
+
+  .itemInfo {
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      :global {
+        .weui-input {
+          height: 60px;
+        }
+      }
+      .infoTitle {
+        display: flex;
+        background-color: #ddd;
+        font-size: $gg-font-size-lg;
+        padding: 10px 0;
+        .left {
+          width: 40%;
+          text-align: center;
+        }
+        .middle {
+          width: 30%;
+          text-align: center;
+        }
+        .right {
+          width: 30%;
+          text-align: center;
+        }
+      }
+    }
+    .mainContent {
+      margin-top: 160px;
+      margin-bottom: 140px;
+      .item {
+        display: flex;
+        background-color: #fff;
+        font-size: $gg-font-size-sm;
+        padding: 10px 0;
+        margin: 10px 0;
+        height: 80px;
+        align-items: center;
+        .name {
+          width: 40%;
+          text-align: left;
+          margin-left: 20px;
+        }
+        .univalence {
+          width: 30%;
+          text-align: center;
+        }
+        .active {
+          width: 20%;
+          height: 60px;
+          text-align: center;
+          background-color: $gg-main-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-size: $gg-font-size-sm;
+        }
+      }
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult .title {
+          font-size: $gg-font-size-sm;
+          color: #bbb;
+          font-weight: 400;
+        }
+      }
+    }
+    .floatBtn {
+      position: fixed;
+      z-index: 999;
+      bottom: 30px;
+      right: 30px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: $gg-main-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.root-web {
+  @include _root;
+
+  .reportQuery {
+    .btnItem {
+      :global {
+        .container {
+          .flexCenter {
+            font-size: $gg-font-size-lg;
+          }
+          .btnBorder {
+            border: 0;
+            .GGBtnList {
+              background-color: #fff;
+              border-radius: 10px;
+              .btnlist {
+                padding: 20px;
+                .icon {
+                  width: 100%;
+                  height: 100%;
+                  margin-right: 10px;
+                }
+                .fontClass {
+                  font-size: $gg-font-size-normal;
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

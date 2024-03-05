@@ -1,0 +1,22 @@
+.root-web {
+  @include _root;
+
+  .patientSelect {
+    @include gg-flex-layout(column);
+    @include gg-wing-blank;
+    :global {
+      .card {
+      border: 0;
+      height: 400px;
+      .cardBottom {
+        background-color: #fff;
+      }
+    }
+    .at-button--primary {
+      background-color: $gg-main-color;
+      border: 0;
+    }
+    }
+    
+  }
+}

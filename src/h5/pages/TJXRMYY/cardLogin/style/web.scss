@@ -1,0 +1,57 @@
+.root-web {
+  @include _root;
+
+  .cardLogin {
+    background-color: #fff;
+    height: 100vh;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 30px;
+      font-size: $gg-font-size-normal;
+      background-color: #f7f3f4;
+      .btn {
+        font-size: $gg-font-size-sm;
+        color: #bbb;
+      }
+    }
+    .card {
+      background-color: #2b6dc4;
+      display: flex;
+      align-items: center;
+      padding: 20px 30px;
+      margin: 20px 30px;
+      border-radius: 10px;
+      .img {
+        width: 80px;
+        height: 80px;
+      }
+      .info {
+        color: #fff;
+        margin-left: 40px;
+        .name {
+          font-size: $gg-font-size-normal;
+        }
+        .number {
+          font-size: $gg-font-size-ssm;
+        }
+      }
+      .btn {
+        color: #fff;
+        border-left: 1px solid #fff;
+        padding: 0 30px;
+        margin-left: 140px;
+        font-size: $gg-font-size-normal;
+        height: 80px;
+        line-height: 80px;
+      }
+    }
+    :global {
+        .at-button {
+            color: $gg-main-color;
+            width: 92%;
+            box-shadow: 3px 4px 7px #bbb;
+        }
+    }
+  }
+}

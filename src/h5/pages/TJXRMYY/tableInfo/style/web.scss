@@ -1,0 +1,67 @@
+.root-web {
+  @include _root;
+
+  .tableInfo {
+    margin-bottom: 40px;
+    .dateSelect {
+      background-color: #fff;
+      padding: 10px 0;
+      @include gg-flex-layout;
+      :global {
+        .at-list::after {
+          border: 0;
+        }
+        .at-list {
+          background-color: transparent;
+          // border: 1px solid #bbb;
+          border-radius: 15px;
+          .at-list__item::after {
+            border: 0;
+          }
+          .at-list__item {
+            padding: 0 10px;
+            .at-list__item-content {
+              display: none;
+            }
+            .item-extra__info {
+              color: #000;
+              padding: 0;
+            }
+            // .item-extra__info::after {
+            //   position: absolute;
+            //   top: 25px;
+            //   right: 0;
+            //   content: "";
+            //   width: 0;
+            //   height: 0;
+            //   overflow: hidden;
+            //   font-size: 0;
+            //   line-height: 0;
+            //   border-width: 10px;
+            //   border-style: solid;
+            //   border-color: #bbb transparent transparent transparent;
+            // }
+          }
+        }
+      }
+    }
+    .lastColumn {
+      height: 50px;
+      font-size: $gg-font-size-md;
+      display: flex;
+      .tbody {
+        border-bottom: 1px solid #e2e2e2;
+        text-align: center;
+      }
+      .tbody:nth-of-type(1) {
+        width: 60%;
+      }
+      .tbody:nth-of-type(2) {
+        width: 40%;
+        border-left: 1px solid #e2e2e2;
+        padding-left: 2px;
+        color: red;
+      }
+    }
+  }
+}

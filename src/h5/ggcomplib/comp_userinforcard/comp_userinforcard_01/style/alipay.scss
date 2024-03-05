@@ -1,0 +1,68 @@
+.root-alipay-comp_nav_normal {
+    .container{
+        @include gg-flex-layout;
+        background-color: $bgcolor;
+        border:solid 1px gray;
+        border-radius: $gg-border-radius-sm;
+        padding:$gg-wingblank-md 0;
+        font-size: $font-size-normal;
+        .emptyIcon {
+            width:$icon-width;
+            height:$icon-height;
+            margin:0 $gg-wingblank-md;
+        }
+    }
+
+    .container2{
+        @include gg-flex-layout;
+        background-color: $bgcolor;
+        border:solid 1px gray;
+        border-radius: $gg-border-radius-sm;
+        padding:$gg-wingblank-md $gg-wingblank-lg;
+        // font-size: $gg-font-size-normal;
+        .userIcon {
+            width:$user-width;
+            height:$user-height;
+            margin:0 $gg-wingblank-md;
+            @include gg-flex-layout;
+        }
+        
+        .row1 {
+            @include gg-flex-layout(row,space-between);
+            font-size: $font-size-md;
+            font-weight: bold;
+            .qrIcon {
+                width:$qricon-width;
+                height:$qricon-height;
+            }
+            .extra {
+                @include gg-flex-layout;
+
+                .extraIcon {
+                    width:$qricon-width;
+                    height:$qricon-height;
+                }
+                .extraTxt {
+                    font-size: $gg-font-size-ssm;
+                }
+            }
+            
+        }
+        .row2 {
+            font-size: $font-size-sm;
+            word-break: break-all;
+            white-space: normal;
+        }
+    }
+
+    .labelRow {
+        font-size: $font-size-normal;
+        word-break: break-all;
+        white-space: normal;
+    }
+
+    .flexCenter {
+        @include gg-flex-layout(column);
+        margin:$gg-wingblank-md 0;
+    }
+}

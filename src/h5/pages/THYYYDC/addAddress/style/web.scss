@@ -1,0 +1,175 @@
+.root-web {
+  // @include _root;
+  // height: 100vh;
+  // position: relative;
+  .addAddress {
+    position: relative;
+    // height: 100vh;
+    background-color: #fff;
+    margin: 30px;
+    padding: 50px 40px;
+    border-radius: 15px;
+    font-size: $gg-font-size-md;
+    .roleType {
+      @include gg-flex-layout;
+      .label {
+        width: 30%;
+      }
+      .value {
+        width: 70%;
+        border-bottom: 1px solid #ddd;
+        // padding-bottom: 10px;
+        @include gg-flex-layout;
+        justify-content: flex-start;
+        // align-items: flex-end;
+        height: 70px;
+        :global {
+          .weui-cells_radiogroup {
+            @include gg-flex-layout;
+            justify-content: space-between;
+          }
+          .weui-cells_checkbox {
+            @include gg-flex-layout;
+          }
+          .weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {
+            color: $gg-main-color;
+          }
+          .at-input {
+            margin: 0;
+            background-color: transparent;
+            padding: 0;
+          }
+          .at-input::after {
+            border: 0;
+          }
+          .at-input input {
+            font-size: $gg-font-size-sm;
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+    .inquireBtn {
+      @include gg-flex-layout;
+      justify-content: flex-end;
+      margin: 20px 0;
+      .btn {
+        background-color: $gg-main-color;
+        color: #fff;
+        width: 400px;
+        height: 70px;
+        @include gg-flex-layout;
+        margin: 0;
+        border-radius: 35px;
+      }
+    }
+    .regionSelect {
+      display: flex;
+      flex-direction: column;
+      font-size: $gg-font-size-md;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 200px;
+      margin-top: 10px;
+      :global {
+        .at-input {
+          margin: 0;
+          background-color: transparent;
+          padding: 0;
+        }
+        .at-input::after {
+          border: 0;
+        }
+        .at-input input {
+          font-size: $gg-font-size-sm;
+          padding-left: 15px;
+        }
+        .at-list__item::after {
+          border: 0;
+        }
+      }
+      .selectAddress {
+        .picker {
+          width: 100%;
+          :global {
+            .at-list__item-content {
+              display: none;
+            }
+            .at-list__item-container {
+              margin-left: 5px;
+            }
+            .at-list__item .item-extra__info {
+              max-width: none;
+            }
+          }
+        }
+        @include gg-flex-layout;
+        height: 90px;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        .selector {
+          min-height: 0px;
+          width: 100%;
+        }
+        .displayNone {
+          :global {
+            .at-icon-chevron-right::before {
+              display: none;
+            }
+          }
+        }
+        :global {
+          .at-list::after {
+            border: 0;
+          }
+          .at-list__item {
+            padding: 15px 0;
+          }
+          .at-list__item-container {
+            margin-left: -25px;
+          }
+          .at-list__item-extra {
+            width: 100%;
+            text-align: left;
+          }
+          .at-list__item .item-extra__info {
+            font-size: $gg-font-size-sm;
+            color: #333;
+          }
+        }
+      }
+      .inputAddress {
+        margin-top: 15px;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        padding-bottom: 15px;
+      }
+    }
+
+    .defaultBtn {
+      :global {
+        .at-switch {
+          background-color: transparent;
+          margin-left: 0;
+        }
+        .at-switch__title {
+          font-size: $gg-font-size-md;
+        }
+        .at-switch::after {
+          border: 0;
+        }
+      }
+    }
+    .submit {
+      width: 90%;
+      background-color: $gg-main-color;
+      color: #fff;
+      font-size: $gg-font-size-md;
+      border-radius: 15px;
+      margin-top: 150px;
+      // position: absolute;
+      // bottom: 30px;
+      // left: 5%;
+    }
+  }
+}

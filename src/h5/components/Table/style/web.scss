@@ -1,0 +1,51 @@
+.root-web {
+  @include _root;
+
+  .table {
+    table {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border-collapse: separate;
+      line-height: 1.5;//map-get($config, line-height)!important;//3.2;
+      list-style: none;
+      font-variant: tabular-nums;
+      font-feature-settings: "tnum";
+      border-spacing: 0;
+      table-layout: fixed;
+      border: 0;
+      tbody {
+        // background-color: rgba(248,248,255);
+      }
+      thead > tr > th {
+        font-size: $gg-font-size-md;
+        font-weight: 400;
+      }
+      tbody > tr > td {
+        font-size: $gg-font-size-normal;
+        background-color: #fff;
+        padding: 5px 10px;
+      }
+      // tbody > tr > td:first-child > span {
+      //   line-height: 100%;
+      // }
+
+      thead > tr > th,
+      tbody > tr > td {
+        border-right: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+      } 
+
+      thead > tr > th:last-child,
+      tbody > tr > td:last-child {
+        border-right: 0px;
+      }
+
+      tbody > tr:last-child > td {
+        // border-bottom: 0;
+      }
+
+    }
+  }
+}

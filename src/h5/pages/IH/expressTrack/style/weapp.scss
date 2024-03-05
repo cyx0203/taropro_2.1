@@ -1,0 +1,101 @@
+.root-weapp {
+  @include _root;
+  .expressTrack {
+    padding: 32px;
+    .expressInfo {
+      background-color: #fff;
+      border-radius: 15px;
+      .title {
+        background-color: $gg-main-color;
+        padding: 15px 32px;
+        font-size: $gg-font-size-ssm;
+        color: #fff;
+        border-radius: 15px 15px 0 0;
+        @include gg-flex-layout(row, space-between, center);
+
+        .copyBtn {
+          width: 50px;
+          height: 30px;
+          font-size: $gg-font-size-ssssm;
+          margin: 0;
+          padding: 5px;
+          @include gg-flex-layout;
+        }
+      }
+      .content {
+        padding: 16px 32px;
+        position: relative;
+        .start_end {
+          text-align: center;
+          font-size: $gg-font-size-llg;
+          .arrow {
+            color: $gg-main-color;
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+        }
+        .extra {
+          text-align: center;
+          font-size: $gg-font-size-ssm;
+          color: #bbb;
+        }
+        .status {
+          position: absolute;
+          top: 11px;
+          left: 318px;
+          font-size: $gg-font-size-ssssm;
+          color: $gg-main-color;
+        }
+      }
+    }
+    .trackArea {
+      background-color: #fff;
+      border-radius: 15px;
+      margin-top: 32px;
+      padding: 32px;
+      .detailAddress {
+        display: flex;
+        align-items: center;
+        font-size: $gg-font-size-sm;
+        color: #bbb;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ddd;
+      }
+      :global {
+        .at-timeline-item {
+          padding: 0 0 100px;
+          .at-timeline-item__content {
+            color: #bbb;
+            .at-timeline-item__content--sub {
+              color: #bbb;
+            }
+          }
+          .at-timeline-item__dot::after {
+            border-color: #bbb;
+          }
+        }
+        .at-timeline-item:nth-child(1) {
+          .at-timeline-item__content {
+            color: $gg-main-color;
+            .at-timeline-item__content--sub {
+              color: $gg-main-color;
+            }
+          }
+          .at-timeline-item__dot,
+          .at-timeline-item__icon {
+            background-color: $gg-main-color;
+            width: 45px;
+            height: 45px;
+            left: -14px;
+          }
+          .at-timeline-item__dot::after {
+            border-color: $gg-main-color;
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+}

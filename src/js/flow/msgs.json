@@ -1,0 +1,35 @@
+{
+    "Config": {
+        "pupath": "config.js",
+        "flowid": "2",
+        "flwtype": "flw",
+        "Page": [
+            {
+                "id": "_G1",
+                "stype": "GROUP",
+                "fn": "Flex.Page_Main_Msgs",
+                "load": "",
+                "loadtimeout": "1",
+                "next": "_E1,_E2",
+                "Step": [
+                ]
+            },
+            {
+                "id": "_E1",
+                "label": "跳转节点",
+                "stype": "END",
+                "type": "sheet",
+                "pageid": "_G1",
+                "sheetid": "sMain"
+            },
+            {
+                "id": "_E2",
+                "label": "跳转节点",
+                "stype": "END",
+                "type": "sheet",
+                "pageid": "_G2",
+                "sheetid": "sMain"
+            }
+        ]
+    }
+}

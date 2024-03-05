@@ -1,0 +1,98 @@
+@mixin _root {
+
+    //是否需要配置顶部阴影
+    // @if $need-shadow==true {
+    //     box-shadow: 0px 1px 8px $shadow-color;
+    // }
+
+    background-color: $bg-color;
+    width: 100%;
+    margin: 10px 0;
+    // border-radius: 20px;
+    // padding: 10px;
+    // height: 120px; //2.5rem;
+    // position: fixed;
+    // bottom: 200px;
+
+    .barGp{
+        display: -webkit-inline-box;
+        // display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 5px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width:100%
+    }
+
+    .titleGp{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 1.5rem;
+        width: 100%;
+
+        // padding: 0 10px;
+        border-bottom: 1px solid #505050;
+        background-color: $bg-title-color;
+
+        .title{
+            font-size: $label-size;
+            line-height:1.5;
+        }
+
+            //ICON
+        .icon {
+            width: $icon-size;
+            height: $icon-size;
+            margin: 0 20px;
+        }
+    }
+
+    
+
+    //单一块
+    .item {
+        // background-color: #eeeeee;
+        // border-radius: 10px;
+        // border-bottom: 1px solid #505050;
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+        padding: 5px 5px;
+        width:11.5%;
+    }
+
+    .item-active{
+        // border-bottom: 0.12rem solid $active-color;
+        color: $active-color;
+        .date{
+            background-color: $active-color;
+            color: #fff;
+        }
+    }
+
+
+
+    //文本
+    .label {
+        font-size: $label-size;
+        line-height:1.4;
+    }
+
+    .date{
+        width: 1.35rem;
+        height: 1.35rem;
+        margin-top: 10px;
+        text-align: center;
+        line-height:1.3rem;
+        background-color: $bg-date-color;
+        font-size: $label-size;
+        border-radius: 50%;
+    }
+}

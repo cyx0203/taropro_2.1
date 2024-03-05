@@ -1,0 +1,67 @@
+.root-web {
+  @include _root;
+
+  .payment {
+    font-size: $gg-font-size-ssm;
+    .content {
+      @include gg-flex-layout(column);
+      background-color: #fff;
+      margin: 10px 0;
+      padding: 0 30px;
+      .payMoney {
+        margin-top: 50px;
+        font-size: $gg-font-size-lllg;
+        font-weight: 600;
+      }
+      .payType {
+        margin: 10px 0;
+        color: #bbb;
+      }
+      .paymentResult {
+        width: 100%;
+        @include gg-flex-layout;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 30px;
+      }
+      .item {
+        color: #bbb;
+        margin: 10px 0;
+        width: 100%;
+        @include gg-flex-layout;
+        justify-content: space-between;
+        .label {
+          width: 110px;
+        }
+      }
+    }
+    .GGTips {
+      padding: 0 30px;
+      color: #bbb;
+    }
+    .footer {
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      bottom: 0;
+      background-color: #fff;
+      @include gg-flex-layout;
+      justify-content: flex-end;
+      .paySum {
+        .money {
+          color: #c9c917;
+        }
+        margin-right: 20px;
+      }
+      .payBtn {
+        height: 100%;
+        width: 200px;
+        background-color: #31c8b5;
+        color: #fff;
+        font-size: $gg-font-size-sm;
+        line-height: 80px;
+        text-align: center;
+      }
+    }
+  }
+}

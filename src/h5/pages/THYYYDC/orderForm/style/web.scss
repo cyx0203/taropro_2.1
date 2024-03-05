@@ -1,0 +1,191 @@
+.root-web {
+  @include _root;
+
+  .orderForm {
+    padding-bottom: 125px;
+    :global {
+      .at-tabs__header {
+        background-color: transparent;
+      }
+      .at-tabs__item {
+        color: #626262;
+      }
+      .at-tabs__item--active {
+        color: #000;
+      }
+      .at-tabs__item--active .at-tabs__item-underline {
+        background-color: #efbc1b;
+        height: 12px;
+        border-radius: 6px;
+        width: 40%;
+        left: 30%;
+      }
+    }
+
+    .cardList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 25px;
+      .cardBox {
+        width: 92%;
+        background-color: #fff;
+        padding: 20px 25px;
+        border-radius: 20px;
+        .header {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #e1e1e1;
+          padding-bottom: 10px;
+          align-items: flex-end;
+          .left {
+            width: 480px;
+            font-size: $gg-font-size-sm;
+          }
+          .right {
+            font-size: $gg-font-size-sssm;
+            color: #a2a2a2;
+          }
+        }
+        .content {
+          display: flex;
+          margin: 25px 0;
+          .left {
+            // width: 30%;
+            display: flex;
+            align-items: center;
+            .infoPic {
+              width: 150px;
+              height: 150px;
+              border-radius: 15px;
+            }
+          }
+          .right {
+            // width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 20px;
+            .infoItem {
+              display: flex;
+              font-size: $gg-font-size-sm;
+            }
+          }
+        }
+        .footer {
+          display: flex;
+          justify-content: flex-end;
+          .footerBtn {
+            width: 170px;
+            height: 70px;
+            border-radius: 35px;
+            background-color: #59a9fe;
+            color: #fff;
+            margin: 0;
+            :global {
+              .at-button {
+                margin: 0;
+              }
+              .at-button__text {
+                height: 70px;
+                display: flex;
+                align-items: center;
+                font-size: $gg-font-size-ssm;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .result {
+      padding: 40px 80px;
+      :global {
+        .GGResult .title {
+          font-size: $gg-font-size-sm;
+          color: #bbb;
+          font-weight: 400;
+        }
+      }
+    }
+    .nav {
+      justify-content: space-around;
+      height: 115px;
+      // z-index: 999;
+      :global {
+        .item {
+          .label {
+            font-size: $gg-font-size-ssm;
+          }
+        }
+      }
+    }
+    :global {
+      .at-float-layout__container {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+    }
+    .floatBox {
+      .header {
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 10px;
+        font-size: $gg-font-size-sm;
+      }
+      .content {
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 15px;
+        .dataItem {
+          .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px 0;
+            .dataPic {
+              width: 100px;
+              height: 100px;
+              border-radius: 15px;
+            }
+            .infoTxt {
+              margin: 0 10px;
+              font-size: $gg-font-size-sm;
+              .title {
+                color: #746767;
+              }
+              .subtitle {
+                color: #646161;
+              }
+            }
+            .extra {
+              justify-self: flex-end;
+              margin-right: 30px;
+            }
+          }
+        }
+        .extreInfo {
+          display: flex;
+          justify-content: flex-end;
+          font-size: $gg-font-size-md;
+          margin-right: 30px;
+        }
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        .dataItem {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10px 0;
+          .infoLabel {
+          }
+          .infoValue {
+            width: 70%;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

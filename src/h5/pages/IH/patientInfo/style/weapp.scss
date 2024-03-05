@@ -1,0 +1,70 @@
+.root-weapp {
+  @include _root;
+  .patientInfo {
+    font-size: $gg-font-size-normal;
+    margin: 20px 25px;
+    .content_main {
+      background-color: #fff;
+      .topTab {
+        width: 70%;
+        margin-bottom: 20px;
+        height: 54px;
+        border-radius: 27px;
+      }
+      .uppart {
+        padding: 15px 0;
+        @include gg-flex-layout(column);
+        border-bottom: 1px solid #bbb;
+        .tips {
+          margin-top: 10px;
+          font-size: $gg-font-size-ssm;
+          color: #bbb;
+        }
+        .QRCode {
+          position: relative;
+          .qrcodeIcon {
+            position: absolute;
+            left: calc(50% - 42px);
+            top: calc(50% - 42px);
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            padding: 2px;
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
+    .info {
+      padding: 20px;
+      .item {
+        @include gg-flex-layout;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+    }
+    .btnArea {
+      @include gg-flex-layout(column);
+      .btn1 {
+        width: 85%;
+        background-color: $gg-main-color;
+        border: 0;
+        color: #fff;
+        margin: 25px 0;
+      }
+      .btn3 {
+        width: 85%;
+        background-color: $gg-main-color;
+        border: 0;
+        color: #fff;
+        margin: 25px 0;
+      }
+      .btn2 {
+        width: 85%;
+        background-color: #f5f5f5;
+        border: 0;
+        color: #000;
+      }
+    }
+  }
+}

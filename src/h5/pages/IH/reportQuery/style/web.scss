@@ -1,0 +1,43 @@
+.root-web {
+  @include _root;
+
+  .reportQuery {
+    .topTips {
+      font-size: $gg-font-size-ssm;
+      display: flex;
+      justify-content: space-between;
+      background-color: #ffede9;
+      margin: 10px 20px;
+      padding: 20px 10px;
+      color: #c7616f;
+    }
+    .btnItem {
+      :global {
+        .container {
+          .flexCenter {
+            font-size: $gg-font-size-lg;
+          }
+          .btnBorder {
+            border: 0;
+            .GGBtnList {
+              background-color: #fff;
+              border-radius: 10px;
+              .btnlist {
+                padding: 20px;
+                .icon {
+                  width: 100%;
+                  height: 100%;
+                  margin-right: 10px;
+                }
+                .fontClass {
+                  font-size: $gg-font-size-normal;
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@mixin _root {
+    margin:$gg-wingblank-md;
+    .cardlist{
+        .card{
+        padding:0 $gg-wingblank-md $gg-wingblank-md;
+        margin:$gg-wingblank-md 0;
+        // border:solid 1px;
+        background-color: lightgray;
+        border-radius: $gg-border-radius-md;
+        .topPart{
+            @include gg-flex-layout;
+            .icon{
+                width:120px;
+                height:120px;
+                border-radius: 60px;
+            }
+            
+            .centerRow {
+                padding:$gg-whitespace-md;
+                .row1{
+                    @include gg-flex-layout(row,space-between);
+                    font-size: $gg-font-size-llg;
+                    font-weight: bold;
+                    .tag{
+                        font-size: $gg-font-size-normal;
+                        font-weight:initial;
+                        background-color: $gg-font-color-sub;
+                        @include gg-flex-layout;
+                        color:black;
+                        border-radius: $gg-border-radius-md;
+                        // border:solid 1px black;
+                    }
+                }
+                .row2{
+                    // @include gg-flex-layout;
+                    font-size: $gg-font-size-normal;
+                    width: 380px;
+                    white-space: pre-line;
+                }
+            }
+
+            .rightRow{
+                display: grid;
+                justify-content: end;
+
+                .icon2{
+                    width:80px;
+                    height:80px;
+                }
+
+                .btn{
+                    margin-top:$gg-whitespace-md;
+                    background-color: $gg-main-color;
+                    width:120px;
+                    font-size: $gg-font-size-sm;
+                    @include gg-flex-layout;
+                    border-radius: $gg-border-radius-lg;
+                }
+            }
+            
+        }
+
+        .bottomPart{
+            margin-top: $gg-whitespace-sm;
+            font-size: $gg-font-size-md;
+            .labelAndValue{
+                // overflow: hidden;
+                // text-overflow: ellipsis;
+                // display: -webkit-box;
+                // -webkit-line-clamp: 3;
+                // -webkit-box-orient: vertical;
+                .wrapper {
+                    // word-break:break-all;
+                    display:-webkit-box;/**对象作为伸缩盒子模型展示**/
+                    -webkit-box-orient:vertical;/**设置或检索伸缩盒子对象的子元素的排列方式**/
+                    -webkit-line-clamp:3;/**显示的行数**/
+                    overflow:hidden;/**隐藏超出的内容**/
+                    text-overflow: ellipsis;
+                }
+                .label {
+                    // margin-left: $gg-wingblank-md;
+                    display: unset;
+                }
+                .value{
+                    display: unset;
+                    word-break: break-all;
+                    white-space: normal;
+                    margin-left: $gg-whitespace-md;
+                }
+            }
+
+            
+
+            .accordion{
+                text-align: end;
+                font-size: $gg-font-size-sm;
+            }    
+            .accordion_icon{
+
+            }
+
+            .card_footer{
+                font-size: $gg-font-size-llg;
+            }
+        }
+        }
+        
+    }
+    .flexCenter{
+        @include gg-flex-layout;
+    }
+}

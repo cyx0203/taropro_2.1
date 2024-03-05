@@ -1,0 +1,130 @@
+.root-web {
+  @include _root;
+  .register {
+    padding-bottom: 115px;
+    .headerArea {
+      width: 100%;
+      height: 130px;
+      border-top: 6px solid #5daddd;
+      @include gg-flex-layout;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 30px;
+      .title {
+        font-size: $gg-font-size-lllg;
+        font-weight: 600;
+        color: #2d66b0;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        display: flex;
+        align-items: center;
+        .tipsIcon {
+          width: 40px;
+          height: 40px;
+          margin-right: 5px;
+        }
+        font-size: $gg-font-size-sssm;
+        color: #696364;
+      }
+    }
+    .formArea {
+      background-color: #fff;
+      font-size: $gg-font-size-lg;
+      width: 100%;
+      :global {
+        .at-input {
+          display: flex;
+          align-self: flex-end;
+        }
+        .at-input::after {
+          border: 0;
+        }
+      }
+      .formItem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 5px solid #f0f0f0;
+        .formAsterisk {
+          color: red;
+          // margin: 0 20px;
+          width: 50px;
+          text-align: center;
+        }
+        .formLabel {
+          width: 250px;
+          font-size: $gg-font-size-lg;
+        }
+        .upDateArea {
+          width: 200px;
+          height: 200px;
+          overflow: hidden;
+          // border: 1px solid;
+        }
+      }
+    }
+    .footerTips {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      .checkArea {
+        margin-right: 20px;
+        z-index: 999;
+        .circle {
+          width: 30px;
+          height: 30px;
+          border-radius: 15px;
+          border: 1px solid #bbb;
+        }
+        .selectedIcon {
+          position: absolute;
+          top: 20px;
+          width: 40px;
+          height: 35px;
+        }
+      }
+      .tipTxt {
+        font-size: $gg-font-size-sssm;
+        color: #a40000;
+      }
+    }
+    .submitBtn {
+      margin-top: 40px;
+      background-color: #5faddd;
+      width: 80%;
+      border-radius: 20px;
+      .submitIcon {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+      }
+      :global {
+        .at-button__text {
+          height: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          font-size: $gg-font-size-lg;
+          color: #fff;
+          letter-spacing: 10px;
+        }
+      }
+    }
+
+    .nav {
+      justify-content: space-around;
+      height: 115px;
+      z-index: 999;
+      :global {
+        .item {
+          .label {
+            font-size: $gg-font-size-ssm;
+          }
+        }
+      }
+    }
+  }
+}

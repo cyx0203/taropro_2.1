@@ -1,0 +1,128 @@
+.root-weapp {
+    @include _root;
+  
+    .deptSelect {
+      padding: 15px;
+      background-color: #fff;
+      .selectDate {
+        .datebar {
+          margin: 0;
+          :global {
+            .barGp {
+              margin: 0;
+              .item {
+                padding: 20px;
+                height: 140px;
+                margin: 0;
+                justify-content: space-around;
+                .label {
+                  font-size: $gg-font-size-normal;
+                }
+                .label:first-child {
+                  margin-bottom: 15px;
+                }
+              }
+              .item-active {
+                border: 0;
+                background-color: $gg-main-color;
+                color: #fff;
+                border-radius: 15px;
+              }
+            }
+          }
+        }
+      }
+      .search_main {
+          margin-top: 10px;
+        :global {
+          .at-search-bar {
+            width: 100%;
+            background-color: transparent;
+          }
+          .at-search-bar::after {
+            border: 0;
+          }
+          .at-search-bar__placeholder-wrap {
+            justify-content: left;
+          }
+          .at-search-bar__input-cnt {
+            border-radius: 35px;
+            background-color: #f8f6f7;
+          }
+  
+          .at-search-bar__action {
+            background-color: $gg-main-color;
+            color: #fff;
+          }
+          .weui-input {
+            height: 60px;
+          }
+        }
+      }
+      .deptContent {
+        display: flex;
+        font-size: $gg-font-size-sm;
+        overflow: hidden;
+        top: 295px;
+        .dept_v1 {
+          background-color: $gg-main-color;
+          color: #fff;
+          width: 30%;
+          text-align: center;
+          overflow: auto;
+          position: fixed;
+          top: 295px;
+          height: 79%;
+          .v1_item {
+            padding: 15px 0 15px 20px;
+            margin: 25px 0 25px 15px;
+            text-align: left;
+          }
+          .dept_active {
+            background-color: #fff;
+            color: $gg-main-color;
+            border-radius: 30px 0 0 30px;
+          }
+        }
+        .dept_v2 {
+          background-color: #fff;
+          width: 68%;
+          text-align: center;
+          overflow: auto;
+          position: fixed;
+          top: 295px;
+          right: 0;
+          height: 78%;
+          .v2_item {
+            padding: 15px 0;
+            margin: 25px 0;
+          }
+        }
+        .dept_item {
+          display: flex;
+          align-items: center;
+          font-size: $gg-font-size-md;
+          justify-content: space-between;
+          border-bottom: 1px solid #ddd;
+          margin-left: 20px !important;
+          margin-right: 20px !important;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+      }
+      .result {
+        padding: 100px;
+        :global {
+          .GGResult {
+            @include gg-flex-layout(column);
+  
+            .title {
+              font-size: $gg-font-size-sm;
+              color: #bbb;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,151 @@
+.root-web {
+  @include _root;
+  background-color: #f5f5f5;
+  height: 100vh;
+  .chooseDoctor {
+    padding-top: 122px;
+    padding-bottom: 50px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 15px 30px;
+      margin: 30px 20px;
+      margin-bottom: 0;
+      border-radius: $gg-border-radius-md;
+    }
+    .content {
+      // background-color: #fff;
+      border-radius: $gg-border-radius-md;
+      // padding: 15px 30px;
+      margin: 0 20px;
+      .depdoctor_doctorinfo_image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+
+      .depdoctor_doctorinfo_icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+      }
+      .depdoctor_doctorinfo_txt {
+        font-size: $gg-font-size-ssm;
+      }
+      .depdoctor_doctorinfo_item_img {
+        height: 50px;
+        width: 50px;
+        margin-right: 5px;
+      }
+
+      .depdoctor_doctorinfo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: $gg-border-radius-sm;
+        margin: 15px 0;
+        position: relative;
+      }
+      .doctorinfor_section {
+        display: flex;
+      }
+      .depdoctor_doctorinfo_right {
+        margin-left: 30px;
+      }
+      .notshow {
+        display: none;
+      }
+      .defaultImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 65px;
+        height: 35px;
+      }
+      .defaultTxt {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-size: 20px;
+        color: #fff;
+      }
+      .depdoctor_doctorinfo_upperright {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .depdoctor_doctorinfo_name {
+        font-size: $gg-font-size-normal;
+        color: $gg-font-color-title;
+      }
+
+      .depdoctor_doctorinfo_identity {
+        font-size: $gg-font-size-sm;
+        color: $gg-font-color-title;
+      }
+
+      .depdoctor_doctorinfo_stars {
+        display: flex;
+        align-items: center;
+      }
+
+      .depdoctor_doctorinfo_introduction {
+        font-size: $gg-font-size-sssm;
+        color: $gg-font-color-text;
+        width: 470px;
+        margin-top: 5px;
+      }
+
+      .depdoctor_doctorinfo_footer {
+        display: flex;
+        border-top: 2px solid #ddd;
+        padding-top: 20px;
+        margin-top: 20px;
+        width: 100%;
+        // align-content: ;
+      }
+
+      .depdoctor_doctorinfo_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 169px;
+      }
+
+      .depdoctor_doctorinfo_item_txt {
+        font-size: 25px;
+        max-width: 80px;
+        margin-left: 5px;
+        text-align: center;
+        color: $gg-font-color-text;
+      }
+    }
+    .appointmentType {
+      display: flex;
+      justify-content: center;
+      .appointmentTypecontent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+      }
+      .appointmentTypeimg {
+        width: 60px;
+        height: 60px;
+        margin: 15px;
+      }
+      .appointmentTypebtn {
+        // width: 95px;
+        border-radius: 15px;
+        .at-button--small {
+          // min-width: 140px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+// @import '~taro-ui/dist/style/index.scss';
+@import './csstool.scss';
+
+//-------------
+//---主题变量---
+//-------------
+// 主色系
+$gg-main-color: #117f44;
+// 主色系（Dark级）
+$gg-main-dark-color: #64C28E;
+// 主色系（Light级）
+$gg-main-light-color: #64C28E;
+// 主色系（Light级-2）
+$gg-main-light-secondary-color: #64C28E;
+// 副色系
+$gg-secondary-color: #fa9806e6;
+// 次级色
+$gg-sub-color: #e0ffff;
+// 背景色
+$gg-background-color: #F5F5F5;
+// 文字内容颜色
+$gg-font-color-main: #323232;
+$gg-font-color-sub: #505050;
+$gg-font-color-text:#3f3f3f;
+
+// 字号
+$gg-font-size-sssm: 20px;
+$gg-font-size-ssm: 24px;
+$gg-font-size-sm: 28px;
+$gg-font-size-normal: 30px;
+$gg-font-size-md: 32px;
+$gg-font-size-lg: 34px;
+$gg-font-size-llg: 36px;
+//特大号字体
+$gg-font-size-lllg: 38px;
+//----------------
+$gg-font-weight-sm:450;
+$gg-font-weight-md:500;
+$gg-font-weight-lg:600;
+//----------------
+//---两翼留白变量---
+//----------------
+$gg-wingblank-md: 20px;
+$gg-wingblank-sm: 10px;
+$gg-wingblank-lg: 30px;
+
+//----------------
+//---上下留白变量---
+//----------------
+$gg-whitespace-md: 15px;
+$gg-whitespace-sm: 10px;
+$gg-whitespace-lg: 30px;
+
+//圆角
+$gg-border-radius-sm:15px;
+$gg-border-radius-md:20px;
+$gg-border-radius-lg:30px;
+
+$gg-topbar-space:120px;
+
+// -======文字大小（陈涛用）
+$gg-font-size-1: 30px;
+$gg-font-size-2: 28px;
+$gg-font-size-3: 26px;
+$gg-font-size-4: 24px;
+$gg-font-size-5: 24px;

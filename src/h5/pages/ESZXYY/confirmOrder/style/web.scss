@@ -1,0 +1,92 @@
+.root-web {
+  @include _root;
+  .confirmOrder {
+    position: relative;
+    .header {
+      background-color: #3b71e8;
+      height: 280px;
+      width: 100%;
+      border-radius: 0 0 50px 50px;
+      .hosInfo {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        .hosTxt {
+          display: flex;
+          flex-direction: column;
+          .hosTxt_label {
+            color: #83a2f7;
+            font-size: $gg-font-size-ssm;
+            margin-bottom: 8px;
+          }
+          .hosTxt_value {
+            color: #fff;
+            font-size: $gg-font-size-normal;
+          }
+        }
+        .hosIcon {
+          height: 80px;
+          width: 80px;
+        }
+      }
+    }
+    .content {
+      margin: 0 35px;
+      background-color: #fff;
+      border-radius: 15px;
+      margin-top: -100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .payInfo {
+        border: 1px solid #dddddd;
+        border-radius: 15px;
+        box-shadow: 0px 0px 0 1px #f7f5f5;
+        width: 100%;
+        padding-top: 20px;
+        .payInfoItem {
+          padding: 0px 30px;
+          margin: 20px 0;
+          view {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        .payBtn {
+          border: 0;
+          border-radius: 0 0 15px 15px;
+          background-color: #f5f2f2;
+          font-size: $gg-font-size-sm;
+          margin-top: 20px;
+        }
+      }
+      .payIcon {
+        width: 265px;
+        height: 40px;
+        margin-top: 30px;
+      }
+    }
+    .footer {
+      position: fixed;
+      bottom: 50px;
+      left: 0;
+      right: 0;
+      display: flex;
+      padding: 0 40px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: $gg-font-size-sm;
+      color: #979797;
+      .footerBtn {
+        background-color: #3b71e8;
+        height: 90px;
+        margin: 0;
+        line-height: 90px;
+        color: #fff;
+        width: 210px;
+        font-size: $gg-font-size-sm;
+        border-radius: 45px;
+      }
+    }
+  }
+}

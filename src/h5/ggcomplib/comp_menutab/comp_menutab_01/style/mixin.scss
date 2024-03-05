@@ -1,0 +1,27 @@
+@mixin _root {
+    .container{
+    
+        .index-menu-block {
+        
+            // margin: 0 20rpx;
+        
+        
+            .at-tabs__header {
+                margin-bottom: 5px;
+                border-radius: 15px;
+            }
+        
+            .at-tabs__item-underline {
+                background-color: green;
+                height: 8px;
+                border-radius: $gg-border-radius-md;
+                width: 50%;
+                left: 24.5%;
+            }
+            .at-tabs__item--active {
+                // font-size: 32rpx;
+                color: green;
+            }
+        }
+}
+}

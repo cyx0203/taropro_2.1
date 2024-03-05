@@ -1,0 +1,84 @@
+.root-weapp {
+    @include _root;
+  
+    .NATType {
+      // height: 100vh;
+      // min-height: 800px;
+      padding-top: 20px;
+      .userCard {
+        @include gg-flex-layout;
+        margin: 15px 0;
+        :global {
+          .container2 {
+            border: 0;
+            background-color: #2b6dc4;
+            width: 85%;
+            color: #fff;
+            font-size: $gg-font-size-sm;
+            justify-content: center;
+            .row1 {
+              align-items: flex-start;
+              .extra {
+                .extraIcon {
+                  height: 30px;
+                  width: 40px;
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .tipsArea {
+        margin-bottom: 20px;
+        :global {
+          .at-countdown__time-box {
+            color: red;
+            font-family: auto;
+            font-size: $gg-font-size-sm;
+          }
+        }
+      }
+      .card {
+        background-color: #fff;
+        margin-bottom: 20px;
+        .cardInfo {
+          @include gg-flex-layout;
+          justify-content: flex-start;
+          .card_img {
+            width: 100px;
+            height: 120px;
+            margin-right: 20px;
+          }
+          .NAT_info {
+            font-size: $gg-font-size-ssm;
+            color: #bbb;
+            // height: 100px;
+            width: 520px;
+            @include gg-flex-layout(column);
+            justify-content: space-around;
+            align-items: flex-start;
+            .title {
+              color: #000;
+              font-size:  $gg-font-size-lg;
+              font-weight: 600;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+  
+      :global {
+        .at-card {
+          border: 0;
+        }
+        .at-card__header {
+          border: 0;
+        }
+        .at-card__content {
+          padding: 0 30px 30px 30px;
+        }
+      }
+    }
+  }
+  

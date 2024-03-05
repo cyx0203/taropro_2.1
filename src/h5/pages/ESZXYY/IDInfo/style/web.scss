@@ -1,0 +1,143 @@
+.root-web {
+  @include _root;
+  .IDInfo {
+    padding-bottom: 115px;
+    .headerArea {
+      width: 100%;
+      height: 130px;
+      border-top: 6px solid #5daddd;
+      @include gg-flex-layout;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 30px;
+      .title {
+        font-size: $gg-font-size-lllg;
+        font-weight: 600;
+        color: #2d66b0;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        display: flex;
+        align-items: center;
+        .tipsIcon {
+          width: 40px;
+          height: 40px;
+          margin-right: 5px;
+        }
+        font-size: $gg-font-size-sssm;
+        color: #696364;
+      }
+    }
+    .contentArea {
+      width: 100%;
+      background-color: #fff;
+      .cardArea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card {
+          width: 95%;
+          height: 280px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding-top: 50px;
+          // padding:50px 20px 0 20px;
+          .personPic {
+            width: 220px;
+            height: 240px;
+            margin-left: 20px;
+          }
+          .right {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            .title {
+              font-size: $gg-font-size-md;
+              font-weight: 600;
+            }
+            .subtitle {
+              font-size: $gg-font-size-sssm;
+              font-weight: 600;
+            }
+            .time {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              font-size: $gg-font-size-sssm;
+              width: 360px;
+              height: 35px;
+              border: 1px solid #fff;
+              border-radius: 15px;
+              margin-top: 30px;
+            }
+          }
+        }
+        .status {
+          color: #ee6a01;
+          font-size: $gg-font-size-lllg;
+          font-weight: 600;
+          margin: 5px 0;
+        }
+      }
+      .infoArea {
+        .title {
+          font-size: $gg-font-size-normal;
+          background-color: #f5f5f5;
+          padding: 8px 18px;
+        }
+        .infoItem {
+          display: flex;
+          align-items: center;
+          font-size: $gg-font-size-normal;
+          border-bottom: 5px solid #f5f5f5;
+          padding: 15px 30px;
+          .infoLabel {
+
+          }
+        }
+      }
+    }
+    .submitBtn {
+      margin-top: 40px;
+      background-color: #5faddd;
+      width: 80%;
+      border-radius: 20px;
+      position: fixed;
+      bottom: 130px;
+      left: 0;
+      right: 0;
+      .submitIcon {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+      }
+      :global {
+        .at-button__text {
+          height: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          font-size: $gg-font-size-lg;
+          color: #fff;
+          letter-spacing: 10px;
+        }
+      }
+    }
+    .nav {
+      justify-content: space-around;
+      height: 115px;
+      z-index: 999;
+      :global {
+        .item {
+          .label {
+            font-size: $gg-font-size-ssm;
+          }
+        }
+      }
+    } 
+  }
+}

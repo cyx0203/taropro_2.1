@@ -1,0 +1,219 @@
+.root-web {
+  @include _root;
+
+  .doctorSelect {
+    padding: 15px;
+    background-color: #fff;
+    .selectDate {
+      .datebar {
+        margin: 0;
+        :global {
+          .barGp {
+            margin: 0;
+            .item {
+              padding: 20px;
+              height: 140px;
+              margin: 0;
+              justify-content: space-around;
+              .label {
+                font-size: $gg-font-size-normal;
+              }
+              .label:first-child {
+                margin-bottom: 15px;
+              }
+            }
+            .item-active {
+              border: 0;
+              background-color: #2b6dc4;
+              color: #fff;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+    .doctorCard {
+      :global {
+        .card {
+          background-color: #f7f3f4;
+          padding-top: 20px;
+          .topPart {
+            .at-col-2 {
+              max-width: fit-content;
+            }
+            .centerRow {
+              .row2 {
+                align-items: flex-end;
+                font-size: $gg-font-size-ssm;
+              }
+            }
+            .rightRow {
+              .btn {
+                color: #fff;
+                height: 60px;
+              }
+            }
+          }
+          .bottomPart {
+            .labelAndValue {
+              .label {
+                font-weight: 600;
+                font-size: $gg-font-size-sm;
+              }
+              .value {
+                font-size: $gg-font-size-ssm;
+              }
+            }
+            .accordion {
+              font-size: $gg-font-size-ssm;
+              color: blue;
+            }
+          }
+        }
+      }
+      .footerPart {
+        .item {
+          display: flex;
+          font-size: $gg-font-size-ssm;
+          margin-top: 25px;
+          align-items: center;
+          // justify-content: center;
+          justify-content: space-between;
+          .itemLeft {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex: 2;
+            .date {
+              font-size: $gg-font-size-sm;
+            }
+            .type {
+              background-color: #2dc775;
+              padding: 5px 15px;
+              border-radius: 10px;
+              color: #fff;
+            }
+            .money {
+              color: #2dc775;
+            }
+          }
+
+          .btn {
+            // flex: 1;
+            background-color: #2b6dc4;
+            padding: 5px 15px;
+            border-radius: 20px;
+            color: #fff;
+            width: 50px;
+          }
+        }
+      }
+    }
+    .floatlayout {
+      :global {
+        .at-float-layout__container {
+          border-radius: 50px 50px 0 0;
+          .layout-header {
+            border-radius: 50px 50px 0 0;
+            text-align: center;
+            background-color: #fff;
+            .layout-header__title {
+              font-weight: 600;
+              font-size: $gg-font-size-llg;
+              padding-left: 80px;
+            }
+          }
+        }
+        .table {
+          font-size: $gg-font-size-normal;
+          .cardhead {
+            padding: 10px 0;
+            border-bottom: 1px solid #bbb;
+            background-color: #f7f7f7;
+            border-radius: 0;
+          }
+          .breakWord {
+            background-color: #fff;
+          }
+          .cardcontent .btn {
+            background-color: $gg-main-color;
+            color: #fff;
+            padding: 0;
+            border-radius: 30px;
+            height: 50px;
+            line-height: 50px;
+            font-size: $gg-font-size-sm;
+            width: 120px;
+          }
+          .flexCenter {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult {
+          @include gg-flex-layout(column);
+          .title {
+            font-size: $gg-font-size-sm;
+            color: #bbb;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    :global {
+      .at-accordion__info__title {
+        font-weight: 600;
+        color: #484747;
+      }
+      .at-list__item {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .at-list__item .item-extra__info {
+        background-color: $gg-main-color;
+        color: #fff;
+        padding-right: 0;
+        padding: 10px;
+        width: 100px;
+        text-align: center;
+        border-radius: 50px;
+        font-size: $gg-font-size-ssm;
+      }
+    }
+    .selectTimeBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 15px;
+      .NO {
+        font-size: $gg-font-size-md;
+        // width: 50px;
+        // height: 50px;
+        // border-radius: 25px;
+        // border: 1px solid #ddd;
+        // text-align: center;
+        // color: #bbb;
+      }
+      .boxContent {
+        width: 400px;
+        font-size: $gg-font-size-md;
+      }
+      .confBtn {
+        background-color: $gg-main-color;
+        width: 120px;
+        height: 60px;
+        border-radius: 30px;
+        margin: 0;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $gg-font-size-sm;
+      }
+    }
+  }
+}

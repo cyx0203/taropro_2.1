@@ -1,0 +1,79 @@
+{
+    "Config": {
+        "pupath": "PublicConfig.json",
+        "flowid": "1",
+        "flwtype": "flw",
+        "Page": [
+            {
+                "id": "_G1",
+                "stype": "GROUP",
+                "fn": "Flex.Page_Main_Index",
+                "load": "",
+                "loadtimeout": "0",
+                "next": "_G2,_L1,_G3,",
+                "Step": [
+                    {"id": "_A0", "upper":"_G1", "stype": "AJAX", "fn": "Ajax.Ajax_Test", "next": ""}
+                ]
+            },
+            {
+                "id": "_L1",
+                "stype": "LOGIC",
+                "fn": "",
+                "load": "_DA0",
+                "loadtimeout": "2000",
+                "next": "_G3,_G1,",
+                "Step": [
+                    {"id": "_DA0", "upper":"_L1", "stype": "DATA", "fn": "Data.Data_Init", "next": "_DA1,"},
+                    {"id": "_DA1", "upper":"_L1", "stype": "DATA", "fn": "Data.Data_GetUserInfo", "next": "#0(_G3),"}
+                ]
+            },
+            {
+                "id": "_G2",
+                "stype": "GROUP",
+                "fn": "Flex.Page_Main_RegConfirm",
+                "load": "_A1",
+                "loadtimeout": "0",
+                "next": "_G1,_L2,",
+                "Step": [
+                    {"id": "_A2", "upper":"_G2", "stype": "AJAX", "fn": "Ajax.Ajax_Test", "next": ",_A1,"},
+                    {"id": "_A1", "upper":"_G2", "stype": "AJAX", "fn": "Ajax.Ajax_Test", "next": "#0(_G1),#1(_L2),"}
+                ]
+            },
+            {
+                "id": "_L2",
+                "stype": "LOGIC",
+                "fn": "",
+                "load": "_DA0",
+                "loadtimeout": "10",
+                "next": "_G3,",
+                "Step": [
+                    {"id": "_DA0", "upper":"_L2", "stype": "DATA", "fn": "Data.Data_GetUserInfo", "next": "#0(_G3),"}
+                ]
+            },
+            {
+                "id": "_G3",
+                "stype": "GROUP",
+                "fn": "Flex.Page_Main_Msgs",
+                "load": "",
+                "next": "_G1,_G2,",
+                "Step": []
+            },
+            {
+                "id": "_G4",
+                "stype": "GROUP",
+                "fn": "Flex.Page_Main_Webview",
+                "load": "",
+                "next": "",
+                "Step": []
+            },
+            {
+                "id": "_E1",
+                "label": "跳转节点",
+                "stype": "END",
+                "type": "sheet",
+                "pageid": "_G1",
+                "sheetid": "sMsgs"
+            }
+        ]
+    }
+}

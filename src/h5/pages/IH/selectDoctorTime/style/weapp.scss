@@ -1,0 +1,222 @@
+.root-weapp {
+  @include _root;
+  .selectDoctorTime {
+    background-color: #f5f5f5;
+    height: 100vh;
+    padding: 80px 20px 0 20px;
+
+    .userinfo {
+      background-color: #fff;
+      min-height: 256px;
+      position: relative;
+      display: flex;
+      padding: 32px;
+      flex-direction: column;
+      border-radius: 20px;
+      .userPic {
+        position: absolute;
+        top: -38px;
+        left: 38px;
+        width: 114px;
+        height: 114px;
+      }
+      .starBtn {
+        width: 140px;
+        height: 60px;
+        border-radius: 32px;
+        border: 1px solid $gg-main-color;
+        color: $gg-main-color;
+        @include gg-flex-layout;
+        font-size: 28px;
+        align-self: flex-end;
+        .star {
+          width: 26px;
+          height: 22px;
+          margin-right: 8px;
+        }
+      }
+      .infoContent {
+        .name {
+          font-size: 40px;
+          margin-right: 16px;
+        }
+        .sub {
+          color: #a3a3a3;
+          font-size: 28px;
+        }
+        .infoItem {
+          margin-top: 20px;
+          font-size: 28px;
+          color: #5f5f5f;
+        }
+      }
+    }
+    .mainContent {
+      background-color: #fff;
+      margin-top: 20px;
+      border-radius: 20px;
+      padding: 15px;
+      .datebar {
+        margin: 0;
+        :global {
+          .barGp {
+            .item {
+              padding: 20px;
+              height: 140px;
+              margin: 10px 5px;
+              background-color: #f5f5f5;
+              justify-content: space-around;
+              border-radius: 15px;
+              .label {
+                font-size: $gg-font-size-normal;
+              }
+              .label:first-child {
+                margin-bottom: 15px;
+              }
+            }
+            .item-active {
+              border: 0;
+              background-color: $gg-main-color;
+              color: #fff;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+      .title {
+        font-size: 32px;
+        padding: 15px;
+      }
+      .contentinfo {
+        @include gg-flex-layout(row, space-between, center);
+        padding: 20px;
+        border-bottom: 2px dashed #cbcbcb;
+        .haoIinfo {
+          font-size: 28px;
+          display: flex;
+          flex-direction: column;
+          color: #5f5f5f;
+          .content2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+          }
+        }
+        .haoBtn {
+          width: 140px;
+          height: 60px;
+          border-radius: 32px;
+          font-size: 32px;
+          @include gg-flex-layout;
+          background: $gg-main-color;
+          margin: 0;
+        }
+        &.noBorder {
+          border: none;
+        }
+      }
+      .footerBtn {
+        font-size: 28px;
+        color: #a3a3a3;
+        @include gg-flex-layout;
+        padding-bottom: 20px;
+      }
+    }
+    .header {
+      padding-bottom: 0;
+      .floatTitle {
+        display: flex;
+        flex-direction: column;
+        .title {
+          font-size: 32px;
+        }
+        .subtitle {
+          font-size: 28px;
+          color: #a3a3a3;
+        }
+      }
+    }
+    .content {
+      .btnListArea {
+        display: flex;
+        flex-wrap: wrap;
+        .btnItem {
+          position: relative;
+          font-size: 28px;
+          @include gg-flex-layout;
+          background-color: #f5f5f5;
+          color: #262626;
+          border-radius: 8px;
+          margin: 7px;
+          height: 86px;
+          width: 31%;
+          border: 1px solid transparent;
+
+          &.active {
+            // background-color: $gg-main-color;
+            border: 1px solid $gg-main-color !important;
+          }
+          .selected {
+            position: absolute;
+            bottom: 0px;
+            right: -1px;
+            width: 30px;
+            height: 20px;
+            background-color: $gg-main-color;
+            border-radius: 16px 0px 8px 0px;
+            @include gg-flex-layout;
+            padding-left: 3px;
+            .selectedIcon {
+              height: 18px;
+            }
+            .selectedIcon::before {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .btnTxt2 {
+            color: $gg-main-color;
+            text-align: center;
+            font-size: 24px;
+          }
+          .btnTxt {
+            text-align: center;
+            font-size: 24px;
+          }
+          .number {
+            margin-top: -7px;
+            font-size: 21px;
+          }
+          .masking_class {
+            background-color: #00000066;
+            color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            @include gg-flex-layout;
+            font-size: 32px;
+            border-radius: 10px;
+            letter-spacing: 10px;
+          }
+        }
+      }
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult {
+          @include gg-flex-layout(column);
+
+          .title {
+            font-size: $gg-font-size-sm;
+            color: #bbb;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

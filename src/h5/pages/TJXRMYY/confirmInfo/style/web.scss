@@ -1,0 +1,92 @@
+.root-web {
+  @include _root;
+
+  .confirmInfo {
+    @include gg-wing-blank(30px);
+    font-size: $gg-font-size-sm;
+    padding-bottom: 30px;
+    .infoMain {
+      margin: 20px 0;
+      background-color: #fff;
+      border-radius: 10px;
+      .patientArea {
+        @include gg-flex-layout;
+        justify-content: space-between;
+        padding: 40px;
+        margin: 0 30px;
+        border-bottom: 1px solid #ddd;
+        .patient {
+          @include gg-flex-layout;
+          justify-content: flex-start;
+          .label {
+            width: 160px;
+            color: #bbb;
+          }
+          .value {
+            margin-left: 20px;
+          }
+        }
+        .btn {
+          padding: 5px 30px;
+          background-color: $gg-main-color;
+          border-radius: 50px;
+          width: 80px;
+          height: 40px;
+          text-align: center;
+          line-height: 38px;
+          color: #fff;
+          align-self: flex-end;
+          font-size: $gg-font-size-ssm;
+        }
+      }
+      .content {
+        padding: 10px 30px;
+        .item {
+          @include gg-flex-layout;
+          justify-content: flex-start;
+          padding: 40px;
+          border-bottom: 1px solid #ddd;
+          .label {
+            width: 33%;
+            color: #bbb;
+          }
+          .value {
+            width: 67%;
+          }
+        }
+      }
+    }
+    :global {
+      .GGTips {
+        margin: 0 25px;
+        margin-bottom: 15px;
+        .at-row {
+          color: red;
+          .rowCenter2 {
+            color: #f3a0a0;
+          }
+        }
+      }
+    }
+    .confirmBtn {
+      :global {
+        .at-button {
+          background-color: $gg-main-color;
+          color: #fff;
+          border-radius: 15px;
+        }
+      }
+      margin-bottom: 20px;
+    }
+    .cancelBtn {
+      :global {
+        .at-button {
+          background-color: #fff;
+          color: $gg-main-color;
+          border: 1px solid $gg-main-color;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.root-web {
+  @include _root;
+
+  .htmlinfoshow {
+    background-color: #fff;
+    font-size: $gg-font-size-sm;
+    p {
+      padding: 10px 20px;
+    }
+  }
+}

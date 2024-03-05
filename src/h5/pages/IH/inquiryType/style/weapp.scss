@@ -1,0 +1,86 @@
+.root-weapp {
+  @include _root;
+  background-color: #f5f5f5;
+  height: 100vh;
+  padding-top: 1px;
+  .inquiryType {
+    .cardItem {
+      background-color: #fff;
+      margin: 24px 32px 16px 32px;
+      border-radius: 15px;
+      .cardItemTitle {
+        @include gg-flex-layout;
+        justify-content: flex-start;
+        padding: 10px 30px;
+        border-bottom: 1px solid #e1e1e1;
+        .titleIcon {
+          width: 35px;
+          height: 35px;
+          margin-right: 15px;
+        }
+        .titleTitle {
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+      .cardItemBody {
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+        .cardItemInfoTips {
+          font-size: 24px;
+          color: #fd6066;
+          margin-bottom: 20px;
+        }
+        :global {
+          .at-timeline-item {
+            padding: 0;
+          }
+          .at-timeline-item__content {
+            font-size: 24px;
+            color: #938f8f;
+            min-height: 40px;
+            margin-left: 30px;
+          }
+          .at-timeline-item__dot,
+          .at-timeline-item__icon {
+            width: 12px;
+            height: 12px;
+            left: 5px;
+            top: 15px;
+          }
+          .at-timeline-item__dot::after {
+            width: 12px;
+            height: 12px;
+            border-color: $gg-main-color;
+          }
+        }
+        .cardItemExtra {
+          font-size: 24px;
+          .cardItemExtraTitle {
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+          }
+          .cardItemExtraList {
+            color: #938f8f;
+          }
+        }
+      }
+      .cardItemFooter {
+        padding: 20px;
+        @include gg-flex-layout;
+        justify-content: flex-end;
+        .footerBtn {
+          width: 180px;
+          height: 70px;
+          border-radius: 35px;
+          background-color: $gg-main-color;
+          color: #fff;
+          @include gg-flex-layout;
+          padding: 0;
+          margin: 0;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

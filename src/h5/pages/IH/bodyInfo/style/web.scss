@@ -1,0 +1,119 @@
+.root-web {
+  @include _root;
+
+  .bodyInfo {
+    .switchArea {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .gender {
+        position: relative;
+        margin-top: 20px;
+        margin-right: 60px;
+        :global {
+          .at-switch {
+            width: 130px;
+            padding: 0px;
+            background-color: #f5f5f5;
+            border: 0 !important;
+            .at-switch__container {
+              background-color: transparent !important;
+            }
+            .weui-switch {
+              background-color: #ececec !important;
+              border: 0;
+              width: 130px;
+            }
+            .weui-switch-cp__box:after,
+            .weui-switch:after {
+              background-color: $gg-main-color;
+            }
+            .weui-switch-cp__box:before,
+            .weui-switch:before {
+              background-color: #ececec;
+            }
+            // .weui-switch-cp__input:checked ~ .weui-switch-cp__box:after,
+            // .weui-switch:checked:after {
+            //   transform: translateX(65px);
+            // }
+          }
+          .at-switch::after {
+            border: 0;
+          }
+        }
+        .genderVal {
+          position: absolute;
+          top: 2px;
+          left: 30px;
+          width: 155px;
+          height: 64px;
+          display: flex;
+          font-size: 32px;
+          color: #fff;
+          .male {
+            // width: 50%;
+            margin-left: 40px;
+          }
+          .female {
+            // width: 50%;
+            margin-left: 35px;
+          }
+        }
+      }
+    }
+    .bodyPartArea {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 750px;
+      height: 1120px;
+      .bodyImg {
+        position: absolute;
+        left: 130px;
+        top: 120px;
+        width: 500px;
+        height: 1000px;
+        background-size: 500px 100%;
+        background-repeat: no-repeat;
+
+      }
+      .bodyPartName {
+        width: 750px;
+        display: flex;
+        justify-content: space-between;
+        .nameLeft {
+          margin-left: 60px;
+          .bodyBtn {
+            background-color: #a6cafa;
+            color: #fff;
+            width: 150px;
+            height: 90px;
+          }
+          .bodyBtn:first-child {
+            margin-top: 40px;
+            margin-bottom: 120px;
+          }
+          .bodyBtn:last-child {
+            margin-top: 140px;
+          }
+        }
+        .nameRight {
+          margin-right: 50px;
+          .bodyBtn {
+            background-color: #a6cafa;
+            color: #fff;
+            width: 150px;
+            height: 90px;
+          }
+          .bodyBtn:first-child {
+            margin-top: 65px;
+            margin-bottom: 120px;
+          }
+          .bodyBtn:last-child {
+            margin-top: 120px;
+          }
+        }
+      }
+    }
+  }
+}

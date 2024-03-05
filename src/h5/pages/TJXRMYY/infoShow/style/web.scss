@@ -1,0 +1,92 @@
+.root-web {
+  @include _root;
+
+  .infoShow {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #fff;
+    .mainImgArea {
+      .mainImg {
+        width: 100%;
+      }
+    }
+    .docCard {
+      @include gg-flex-layout;
+      justify-content: flex-start;
+      position: absolute;
+      top: 320px;
+      left: 37px;
+      background-color: #fff;
+      height: 260px;
+      width: 90%;
+      z-index: 999;
+      box-shadow: 0px 4px 8px 0px #bbb;
+      border-radius: 15px 15px 0 0;
+      .docImg {
+        width: 150px;
+        height: 220px;
+        margin: 0 20px;
+      }
+      .docTextArea {
+        margin: 20px;
+        font-size: $gg-font-size-sm;
+        height: 100%;
+        @include gg-flex-layout(column);
+        align-items: flex-start;
+        justify-content: space-around;
+        .name {
+          font-size: $gg-font-size-lg;
+          font-weight: 600;
+        }
+      }
+    }
+    .mainContent {
+      position: absolute;
+      top: 370px;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 80px 80px 0 0;
+      padding-top: 40px;
+      .cardBlank {
+        height: 170px;
+      }
+      .content {
+        margin: 10px 45px;
+        background-color: #fff;
+        .titleBox {
+          @include gg-flex-layout;
+          .title {
+            height: 100px;
+            background-color: #1e60be;
+            @include gg-flex-layout;
+            font-size: $gg-font-size-lg;
+            width: 35%;
+            color: #fff;
+          }
+          .blank {
+            width: 65%;
+            background-color: #fff;
+            height: 94px;
+            border-bottom: 6px solid #1e60be;
+          }
+        }
+        .contentBox {
+          font-size: $gg-font-size-sm;
+          padding: 20px 10px 10px 10px;
+          background-color: #fff;
+        }
+        .addressImgArea {
+          width: 100%;
+          .addressImg {
+            width: 100%;
+            height: auto;
+            img {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

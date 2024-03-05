@@ -1,0 +1,78 @@
+.root-web {
+  @include _root;
+
+  .floatLayout {
+    :global .at-float-layout__container {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+      .layout-header {
+        font-weight: bold;
+        background-color: #5faddd;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+
+      .at-checkbox__option--selected .at-checkbox__icon-cnt {
+        background-color: #5faddd;
+      }
+
+      .at-checkbox__icon-cnt {
+        border-color: #5faddd;
+      }
+
+      .at-checkbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .at-checkbox__option {
+          width: 49%;
+          padding-left: 0;
+
+          .at-checkbox__option-wrap {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .checkboxClass {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .item {
+        width: 49%;
+      }
+    }
+
+    :global .taro-checkbox_checked {
+      width: 30px;
+      height: 30px;
+      top: 3px;
+      margin-right: 8px;
+      font-size: 30px;
+      border-radius: 50%;
+      border-color: #5faddd;
+      background-color: #5faddd;
+      color: #fff;
+    }
+
+    .foot {
+      border-top: 1px solid #aca5a5;
+      padding-top: 20px;
+
+      .btn {
+        background-color: #5faddd;
+        width: 180px;
+        height: 70px;
+        line-height: 70px;
+        color: #fff;
+        margin-right: 20px;
+        font-size: 24px;
+      }
+    }
+  }
+}

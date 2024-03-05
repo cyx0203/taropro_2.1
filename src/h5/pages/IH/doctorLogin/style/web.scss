@@ -1,0 +1,83 @@
+.root-web {
+  @include _root;
+  height: 100vh;
+  background: linear-gradient(180deg, #3763bc 0%, #3763bc 100%);
+  padding-top: 32px;
+  .doctorLogin {
+    .content {
+      @include gg-flex-layout(column, center, center);
+      box-shadow: 0 0 12px 0 #bfc0c080;
+      margin: 0 32px;
+      padding: 32px 0;
+      background-color: #fff;
+      border-radius: 12px;
+      .img {
+        width: 82px;
+        height: 82px;
+      }
+      .title {
+        font-size: $gg-font-size-lllg;
+        margin: 16px 0;
+      }
+      .subtitle {
+        font-size: $gg-font-size-sm;
+        color: $gg-font-color-text;
+        margin-bottom: 32px;
+      }
+      .input_main {
+        width: 560px;
+        border: 1px solid #3763bc;
+        @include gg-flex-layout(row, flex-start, center);
+        height: 90px;
+        padding: 0 32px;
+        border-radius: 45px;
+        margin-top: 32px;
+        .input_title {
+          font-size: $gg-font-size-sm;
+          color: $gg-font-color-text;
+          width: 85px;
+        }
+        .formInput input{
+          height: 50px;
+          font-size: $gg-font-size-sm;
+          width: 450px;
+        }
+        // :global {
+        //   .at-input {
+        //     padding: 10px;
+        //   }
+        //   .at-input::after {
+        //     border-bottom: none;
+        //   }
+        // }
+        .select {
+          width: 100%;
+          height: 100%;
+          line-height: 90px;
+          .typeLabel {
+            font-size: $gg-font-size-sm;
+            color: $gg-font-color-text;
+          }
+          .typeValue {
+            font-size: $gg-font-size-sm;
+          }
+          .selectValue {
+            @include gg-flex-layout;
+            justify-content: space-between;
+          }
+        }
+      }
+      .submitBtn {
+        width: 620px;
+        height: 90px;
+        background-color: #3763bc;
+        font-size: $gg-font-size-llg;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        border-radius: 45px;
+        margin-top: 32px;
+      }
+    }
+  }
+}

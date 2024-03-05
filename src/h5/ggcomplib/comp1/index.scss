@@ -1,0 +1,59 @@
+@import '../../style/index.scss';
+
+.card-wrapper {
+
+  $pd-sm: 18px;
+  $pd-md: 20px;
+
+  background-color: #fff;
+
+  -webkit-box-shadow: 0px 3px 21px -4px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 3px 21px -4px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 3px 21px -4px rgba(0, 0, 0, 0.29);
+  border-radius: 8px;
+
+  .clickable {
+    @include active;
+  }
+
+  .header {
+    border-bottom: 1px solid #eee;
+    padding: $pd-sm $pd-md;
+    font-size: $gg-font-size-lg;
+    color: $gg-font-color-title;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .at-checkbox__icon-cnt {
+      // border: 2px solid rgba(1, 172, 130, 0.2)
+    }
+  }
+
+  .body {
+    padding: $pd-sm $pd-md;
+    display: flex;
+
+    .content {
+      flex: 1 1;
+      font-size: $gg-font-size-md;
+      color: $gg-font-color-sub;
+    }
+
+    .action {
+      flex-basis: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &-btn {
+        padding: 0 32px;
+      }
+    }
+  }
+
+  .z-arrow {
+    color: $gg-font-color-sub;
+    font-size: $gg-font-size-lg;
+  }
+}

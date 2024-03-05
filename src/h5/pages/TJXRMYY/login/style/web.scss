@@ -1,0 +1,36 @@
+.root-web {
+  @include _root;
+
+  .login {
+    background-color: #fff;
+    height: 100vh;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 30px;
+      font-size: $gg-font-size-normal;
+      background-color: #f7f3f4;
+    }
+    .formData {
+      margin: 0 30px;
+      :global {
+        .at-input__input {
+          border: 1px solid #bbb;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          max-width: 400px;
+          border-radius: 10px;
+          padding: 0 8px;
+        }
+      }
+    }
+    :global {
+      .at-button {
+        color: #fff;
+        width: 95%;
+        background-color: $gg-main-color;
+      }
+    }
+  }
+}

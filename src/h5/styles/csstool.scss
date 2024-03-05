@@ -1,0 +1,24 @@
+//flex常规布局
+//$direction……布局模式【默认：row】
+//$h……水平方式【默认：center】
+//$v……垂直方式【默认：center】
+@mixin gg-flex-layout($direction:row, $h:center, $v:center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $h;
+    align-items: $v;
+}
+
+//两翼留白
+//$distance……两翼留白像素
+@mixin gg-wing-blank($distance:10px) {
+    padding-left: $distance;
+    padding-right: $distance;
+}
+
+//上下留白
+//$distance……上下留白像素
+@mixin gg-gap-blank($distance:10px) {
+    padding-top: $distance;
+    padding-bottom: $distance;
+}

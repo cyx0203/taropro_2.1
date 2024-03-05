@@ -1,0 +1,137 @@
+.root-web {
+  @include _root;
+  .uploadIDCard {
+    padding-bottom: 115px;
+    position: relative;
+    .headerArea {
+      width: 100%;
+      height: 130px;
+      border-top: 6px solid #5daddd;
+      @include gg-flex-layout;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 30px;
+      .title {
+        font-size: $gg-font-size-lllg;
+        font-weight: 600;
+        color: #2d66b0;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        display: flex;
+        align-items: center;
+        .tipsIcon {
+          width: 40px;
+          height: 40px;
+          margin-right: 5px;
+        }
+        font-size: $gg-font-size-sssm;
+        color: #696364;
+      }
+    }
+    .uploadBox {
+      width: 100%;
+      height: 300px;
+      background-color: #fff;
+      margin: 6px 0;
+      @include gg-flex-layout;
+      .idCardImg {
+        width: 612px;
+        height: 267px;
+        text-align: center;
+      }
+      .idCardArea {
+        width: 612px;
+        height: 267px;
+        @include gg-flex-layout(column, center, center);
+        .uploadIcon {
+          width: 96px;
+          height: 96px;
+        }
+        .uploadTxt {
+          font-size: $gg-font-size-md;
+          margin-top: 17px;
+        }
+        .uploadsubTxt {
+          font-size: $gg-font-size-sssm;
+        }
+      }
+    }
+    .formArea {
+      background-color: #fff;
+      font-size: $gg-font-size-lg;
+      width: 100%;
+      :global {
+        .at-input {
+          display: flex;
+          align-self: flex-end;
+        }
+        .at-input::after {
+          border: 0;
+        }
+      }
+      .formItem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 5px solid #f0f0f0;
+        .formAsterisk {
+          color: red;
+          // margin: 0 20px;
+          width: 50px;
+          text-align: center;
+        }
+        .formLabel {
+          width: 250px;
+          font-size: $gg-font-size-lg;
+        }
+        .upDateArea {
+          width: 400px;
+          height: 200px;
+          overflow: hidden;
+          // border: 1px solid;
+        }
+      }
+    }
+    .submitBtn {
+      margin-top: 40px;
+      background-color: #5faddd;
+      width: 80%;
+      border-radius: 20px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 130px;
+      .submitIcon {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+      }
+      :global {
+        .at-button__text {
+          height: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          font-size: $gg-font-size-lg;
+          color: #fff;
+          letter-spacing: 10px;
+        }
+      }
+    }
+
+    .nav {
+      justify-content: space-around;
+      height: 115px;
+      z-index: 999;
+      :global {
+        .item {
+          .label {
+            font-size: $gg-font-size-ssm;
+          }
+        }
+      }
+    }
+  }
+}

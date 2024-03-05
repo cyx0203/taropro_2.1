@@ -1,0 +1,33 @@
+{
+    "Config": {
+        "pupath": "PublicConfig.json",
+        "flowid": "1",
+        "flwtype": "flw",
+        "Page": [
+            {
+                "id": "_E0",
+                "stype": "END",
+                "pageid": "{lastnext.0}",
+                "loadtimeout": "",
+                "sheetid": "{lastsheet}"
+            },
+            {
+                "id": "_G0",
+                "stype": "GROUP",
+                "fn": "group/main.Page_Pharmacist_Result",
+                "load": "",
+                "next": "_E0",
+                "loadtimeout": "",
+                "Step": [
+                    {
+                        "id": "_DA0",
+                        "stype": "DATA",
+                        "fn": "",
+                        "next": "",
+                        "upper": "_G0"
+                    }
+                ]
+            }
+        ]
+    }
+}

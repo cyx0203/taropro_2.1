@@ -1,0 +1,10 @@
+// 参数配置
+@import './params.scss';
+// 混合样式内容
+@import './mixin.scss';
+//[支付宝]小程序端特定样式内容
+@import './alipay.scss';
+//[微信]小程序端特定样式内容
+@import './weapp.scss';
+//[WEB]端特定样式内容
+@import './web.scss';

@@ -1,0 +1,33 @@
+@mixin _root {
+    // width: 180px;
+    // height: 180px;
+
+    .container {
+        width: 130px;
+        height: 130px;
+        // border: solid 1px yellow;
+        padding: $gg-whitespace-sm;
+        // margin: $gg-whitespace-sm;
+
+        @include gg-flex-layout(column);
+
+        .GGMenu {
+            padding: $gg-whitespace-sm;
+            // border: solid 1px gray;
+            border-radius: $gg-border-radius-sm;
+
+            // background-color: $gg-color-grey-active;
+            width: 65%;
+            height: 65%;
+
+            .icon {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .fontClass {
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@mixin _root {
+    .GGWhiteSpace{
+        height: $gg-whitespace-md;
+    }
+
+    .GGWingBlank{
+        padding: $gg-wingblank-md;
+    }
+
+    .pay_main{
+        margin-top: $gg-topbar-space;
+        width: 100%;
+        overflow-y: auto;
+        position: relative;
+    }
+    
+    .firstcontainer{
+        // height:200px;
+        background-color: #fff;
+        border-radius: $gg-border-radius-md;
+        margin:0 0 $gg-wingblank-md 0;
+        padding:$gg-wingblank-md;
+    }
+    
+    .padleft{
+        padding-left: $gg-wingblank-md;
+    }
+    
+    .atlist {
+        border:solid #808080 1px;
+        margin:$gg-wingblank-md;
+    }
+    
+    .bottombt {
+        // background-color:mediumseagreen;
+        color:white;
+        margin:20px 0 $gg-wingblank-md 0;
+        border-radius: 30px;
+    }
+    
+    .pay {
+        margin:0 $gg-wingblank-md;
+    }
+    
+    .add {
+        word-break: break-all;
+        white-space: pre-wrap;
+    }
+    
+    .defaultImg {
+        height:35px;
+        width:35px;
+    }
+    
+    .sub{ //副标题颜色
+        color:$gg-font-color-sub;
+    }
+    
+    .mainTitle { //主标题颜色
+        color:$gg-font-color-text;
+    }
+    
+    .textColor { //正文颜色
+        color:$gg-font-color-text;
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config><pupath>js.PublicConfig.xml</pupath><flowtype>flw</flowtype><Page id="_G0" stype="GROUP" fn="group/main.Page_Pharmacist_Login" load="" next="_L0" loadtimeout="0" flag=""/><Page id="_G1" stype="GROUP" fn="group/main.Page_Pharmacist_Menu" load="" next="_E0,_E1,_SUB0" loadtimeout="" flag=""/><Page id="_L0" stype="LOGIC" fn="" load="_DA0" next="_G1" loadtimeout="0" flag=""><Step id="_DA0" stype="DATA" fn="data/data.Data_Init" next="#(_G1)" flag=""/></Page><Page id="_E0" stype="END" pageid="_G0" sheetid="verify"/><Page id="_E1" stype="END" pageid="_G0" sheetid="sender"/><Page id="_SUB0" stype="SUBPROCESS" type="model" pageid="_G0" sheetid="001" next="_G1"/><Diagram>{ "class": "GraphLinksModel",
+  "copiesKey": false,
+  "linkKeyProperty": "key",
+  "modelData": {"position":"-736 -319", "canRelink":false},
+  "nodeDataArray": [ 
+{"key":"_G0", "text":"登录页", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/main.Page_Pharmacist_Login", "flag":"", "load":"", "next":"_L0", "sub":true, "loc":"-500 -195.74392089843747", "timeout":"0"},
+{"key":"_G1", "text":"主页", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/main.Page_Pharmacist_Menu", "flag":"", "load":"", "next":"_E0,_E1,_SUB0", "sub":true, "loc":"-230 -65.00000000000003"},
+{"key":"_L0", "text":"逻辑节点", "isGroup":true, "category":"LOGIC", "type":"LOGIC", "fn":"", "flag":"", "load":"_DA0", "next":"_G1", "sub":true, "loc":"-510 -35.000000000000014", "timeout":"0"},
+{"key":"_E0", "geo":"stop", "text":"审核业务", "color":"#ea2857", "category":"quit", "type":"END", "pageid":"_G0", "sheetid":"verify", "loc":"0 -220", "next":"", "load":""},
+{"key":"_E1", "geo":"stop", "text":"配送业务", "color":"#ea2857", "category":"quit", "type":"END", "pageid":"_G0", "sheetid":"sender", "loc":"0 -20", "next":"", "load":""},
+{"key":"_DA0", "geo":"file", "text":"数据节点", "color":"lightblue", "category":"data", "type":"DATA", "fn":"data/data.Data_Init", "flag":"", "next":"#(_G1)", "loc":"-495 -20.000000000000014", "group":"_L0", "load":""},
+{"key":"_SUB0", "text":"模板节点", "color":"#ea2857", "category":"model", "type":"MODEL", "pageid":"_G0", "sheetid":"001", "next":"_G1", "loc":"-230 -244.25607910156248", "load":""}
+ ],
+  "linkDataArray": [ 
+{"from":"_G0", "to":"_L0", "key":-1, "points":[-459.7171662529869,-156.98296584435906,-460.7692852599357,-72.81344528845347]},
+{"from":"_L0", "to":"_G1", "key":-2, "points":[-404.91069794214695,-10.121773696082464,-238.56645455954515,-53.594792857573196]},
+{"from":"_G1", "to":"_E0", "key":-3, "points":[-155.45081323280448,-87.09265866983337,3.7979364813759737,-174.13232565837066]},
+{"from":"_G1", "to":"_E1", "key":-4, "points":[-155.02073523367085,-50.69111916578725,1.5758668191857517,1.2419066125750788]},
+{"from":"_G1", "to":"_SUB0", "key":-5, "points":[-197.320726268604,-102.81322053589503,-198.52870226444793,-182.25966191433807]}
+ ]}</Diagram></Config>

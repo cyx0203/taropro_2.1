@@ -1,0 +1,49 @@
+.root-web {
+  @include _root;
+
+  .departmentSelect {
+    @include gg-wing-blank;
+    :global {
+      .at-search-bar {
+        width: 100%;
+        background-color: transparent;
+      }
+      .at-search-bar::after {
+        border: 0;
+      }
+      .at-search-bar__placeholder-wrap {
+        justify-content: left;
+      }
+      .at-search-bar__input-cnt {
+        border-radius: 8px;
+        background-color: #fff;
+      }
+
+      .at-search-bar__action {
+        background-color: $gg-main-color;
+        color: #fff;
+      }
+      .weui-input {
+          height: 60px;
+      }
+    }
+    :global {
+      .btnBorder {
+        border: 0;
+        border-radius: 10px;
+        .GGBtnList {
+          background-color: #fff;
+            .fontClass {
+              color: #000;
+          }
+        }
+        .GGBtnList:first-child {
+          border-radius: 10px 10px 0 0;
+        }
+        .GGBtnList:last-child {
+          border-radius: 0 0 10px 10px;
+        }
+      }
+    }
+  }
+}

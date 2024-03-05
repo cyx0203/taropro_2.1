@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config><pupath>js.PublicConfig.xml</pupath><flowtype>flw</flowtype><Page id="_G0" stype="GROUP" fn="group/send.Page_Pharmacist_Distribution_Masters" load="" next="_G1,_G2" loadtimeout="" flag=""/><Page id="_G1" stype="GROUP" fn="group/send.Page_Pharmacist_Distribution_Input" load="" next="_G3" loadtimeout="" flag=""/><Page id="_G2" stype="GROUP" fn="group/send.Page_Pharmacist_Distribution_Details" load="" next="_G0" loadtimeout="" flag=""/><Page id="_G3" stype="GROUP" fn="group/send.Page_Pharmacist_Distribution_Result" load="" next="_E0" loadtimeout="" flag=""/><Page id="_E0" stype="END" pageid="_G1" sheetid="start"/><Diagram>{ "class": "GraphLinksModel",
+  "copiesKey": false,
+  "linkKeyProperty": "key",
+  "modelData": {"position":"-736 -319", "canRelink":false},
+  "nodeDataArray": [ 
+{"key":"_G0", "text":"列表信息\n", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/send.Page_Pharmacist_Distribution_Masters", "flag":"", "load":"", "next":"_G1,_G2", "sub":true, "loc":"-560 -160"},
+{"key":"_G1", "text":"配送地址填写\n", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/send.Page_Pharmacist_Distribution_Input", "flag":"", "load":"", "next":"_G3", "sub":true, "loc":"-290 -170"},
+{"key":"_G2", "text":"物流详情\n", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/send.Page_Pharmacist_Distribution_Details", "flag":"", "load":"", "next":"_G0", "sub":true, "loc":"-290 20"},
+{"key":"_G3", "text":"修改成功", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/send.Page_Pharmacist_Distribution_Result", "flag":"", "load":"", "next":"_E0", "sub":true, "loc":"-10 -180"},
+{"key":"_E0", "geo":"stop", "text":"跳转/结束", "color":"#ea2857", "category":"quit", "type":"END", "pageid":"_G1", "sheetid":"start", "loc":"150 -50", "next":"", "load":""}
+ ],
+  "linkDataArray": [ 
+{"from":"_G0", "to":"_G1", "key":-1, "points":[-454.71941878978754,-171.0531624259911,-298.75773371190456,-176.52550225328523]},
+{"from":"_G0", "to":"_G2", "key":-2, "points":[-455.7234269865111,-131.70905739148503,-297.75372551518103,-26.395923077265007]},
+{"from":"_G1", "to":"_G3", "key":-3, "points":[-154.71573834071114,-179.1812493707295,-18.76141416098092,-179.4243022949545]},
+{"from":"_G3", "to":"_E0", "key":-4, "points":[70.95828616895174,-142.75479419463213,160.40080487551924,-42.166207290438564]}
+ ]}</Diagram></Config>

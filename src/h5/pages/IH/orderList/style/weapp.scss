@@ -1,0 +1,147 @@
+.root-weapp {
+  @include _root;
+  background-color: #f5f5f5;
+  .orderList {
+    margin-top: $gg-topbar-space;
+    :global {
+      .at-tabs {
+        // padding-bottom: 115px;
+      }
+      .at-tabs_margin {
+        margin-bottom: 140px;
+      }
+      .at-tabs__header {
+        border-radius: $gg-border-radius-md $gg-border-radius-md 0 0;
+      }
+      .at-tabs__item--active {
+        color: #000;
+      }
+      .at-tabs__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 24px;
+        padding-top: 10px;
+        line-height: 50px;
+      }
+      .at-tabs__item-underline {
+        position: unset;
+        width: 90%;
+        height: 8px;
+        border-radius: 8px;
+      }
+      .at-button {
+        height: 60px;
+        line-height: 57px;
+        font-size: $gg-font-size-ssm;
+      }
+    }
+    .content_item_header {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0;
+      border-bottom: 1px dashed #ddd;
+      margin: 0 30px 20px 30px;
+    }
+
+    .content_item_ordernumber {
+      font-size: $gg-font-size-sssm;
+      color: #3f3f3f;
+    }
+
+    .content_item_status {
+      font-size: $gg-font-size-sssm;
+      color: #3f3f3f;
+    }
+    .banner {
+      // padding: 30px 0 30px 20px;
+      padding: 30px;
+    }
+    .content_item_banner_btnList {
+      display: flex;
+      margin: 0 30px;
+      justify-content: flex-end;
+    }
+    .content_item_banner_btn {
+      border: 3px solid $gg-main-color;
+      border-radius: 50px;
+      margin: 8px;
+      flex-basis: 150px;
+      z-index: 2;
+    }
+    //内容中部
+    .content_item_people {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: $gg-font-size-sssm;
+      color: #3f3f3f;
+    }
+    .content_item_main {
+      border-radius: $gg-border-radius-md;
+      background-color: #fff;
+      margin: 20px;
+    }
+    .content_item_doctor {
+      display: flex;
+      align-items: center;
+      padding: 0 30px 30px 30px;
+    }
+
+    .content_item_doctorinfor_department {
+      margin: 0 10px 0 40px;
+    }
+
+    .content_item_doctorinfor_identity {
+      font-size: $gg-font-size-sssm;
+      color: #3a3a3a;
+    }
+
+    .content_item_doctorimg {
+      width: 100px;
+      height: 100px;
+      margin-right: 30px;
+    }
+    //内容底部
+    .content_item_footer {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px dashed #ddd;
+      margin-top: 10px;
+      padding: 20px 30px 0 30px;
+    }
+
+    .content_item_inquiry {
+      display: flex;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .content_item_inquiry_left {
+      display: flex;
+      flex-direction: column;
+      font-size: $gg-font-size-sssm;
+      color: #3f3f3f;
+    }
+
+    .content_item_inquiry_right {
+      display: flex;
+      font-size: $gg-font-size-sssm;
+      line-height: 83px;
+      color: #3f3f3f;
+    }
+
+    .nav {
+      justify-content: space-around;
+      height: 115px;
+      z-index: 999;
+      :global {
+        .item {
+          .label {
+            font-size: $gg-font-size-ssm;
+          }
+        }
+      }
+    }
+  }
+}

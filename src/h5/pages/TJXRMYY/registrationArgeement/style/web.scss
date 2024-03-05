@@ -1,0 +1,36 @@
+.root-web {
+  @include _root;
+  .registrationArgeement {
+    @include gg-flex-layout(column);
+    .header {
+      margin: 20px 0 10px 0;
+      @include gg-flex-layout(column);
+      .img {
+        width: 100px;
+        height: 100px;
+      }
+      .title {
+        font-weight: 600;
+        font-size: $gg-font-size-lllg;
+      }
+    }
+    .content {
+      margin: 20px;
+      padding: 20px 15px;
+      background-color: #fff;
+      border-radius: 30px;
+      // .item {
+      //   color: #868686;
+      //   font-size: $gg-font-size-normal;
+      //   margin: 10px 0;
+      // }
+    }
+    :global {
+      .at-button {
+        background-color: $gg-main-color;
+        color: #fff;
+        width: 95%;
+      }
+    }
+  }
+}

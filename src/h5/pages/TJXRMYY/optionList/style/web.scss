@@ -1,0 +1,58 @@
+.root-web {
+  @include _root;
+  .optionList {
+    :global {
+      .weui-input {
+        height: 60px;
+      }
+      .at-search-bar__action {
+        background-color: $gg-main-color;
+      }
+      .at-tabs {
+        .at-tabs__header {
+          .at-tabs__item-underline {
+            background-color: $gg-main-color;
+            height: 8px;
+            border-radius: $gg-border-radius-md;
+            width: 50%;
+            left: 24.5%;
+          }
+        }
+      }
+    }
+    padding: 0 15px;
+    .cardMain {
+      @include gg-flex-layout;
+      width: 100%;
+      margin: 15px 0;
+      border-radius: 15px;
+      background-color: #fff;
+      .cardImg {
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+      }
+      .cardText {
+        @include gg-flex-layout(column);
+        // justify-content: space-around;
+        align-items: flex-start;
+        font-size: $gg-font-size-sm;
+        color: #666666;
+        width: 75%;
+        // height: 150px;
+        height: 100%;
+        margin-left: 40px;
+      }
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult .title {
+          font-size: $gg-font-size-sm;
+          color: #bbb;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.root-web {
+  @include _root;
+
+  .result {
+    .upper {
+        position: relative;
+        width: 100%;
+        .bgImg {
+          width: 100%;
+        }
+        .resultArea {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            right: 0;
+            :global {
+                .GGResult {
+                    .title {
+                        color: #fff;
+                        font-weight: 400;
+                    }
+                    .subTitle {
+                      color: #ddd;
+                    }
+                }
+            }
+        }
+    }
+    .btnArea {
+      .examineBtn {
+        :global {
+          .at-button {
+            background-color: $gg-main-color;
+            color: #fff;
+            border-radius: 60px;
+            width: 60%;
+          }
+        }
+        margin-bottom: 20px;
+      }
+      .regretBtn {
+        :global {
+          .at-button {
+            background-color: #fff;
+            color: $gg-main-color;
+            border: 1px solid #296dc5;
+            border-radius: 15px;
+            border-radius: 60px;
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}

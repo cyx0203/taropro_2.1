@@ -1,0 +1,12 @@
+.root-weapp-comp_list_normal {
+    // @include _root;
+    .GGList {
+        .rightCol {
+          display: flex;
+          justify-content: flex-end;
+        }
+        .at-button--small {
+            width:150px;
+        }
+      }
+}

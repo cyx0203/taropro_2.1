@@ -1,0 +1,79 @@
+@mixin _root {
+    .container{
+        padding:$gg-whitespace-md;
+        .icon{
+            width:$width;
+            height:$height;
+            // border:solid black 1px;
+            // margin:0 $gg-whitespace-md;
+        }
+        .flexCenter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .line{
+            height:60px;
+            width:10px;
+            background-color: green;
+        }
+
+    .btnBorder {
+        border:solid darkgray 1px;
+        margin-top:10px
+    }
+
+    .GGBtnList{
+        background-color: $bgcolor;
+
+        
+
+        .btnlist{
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            padding:$gg-whitespace-md 0;
+            .icon{
+                width:$width;
+                height:$height;
+                // border:solid black 1px;
+                // margin:0 $gg-whitespace-md;
+            }
+            .fontClass{
+                font-size: $font-size;
+                color:$font-color;
+                display: flex;
+                justify-content: left;
+            }
+            .btn{
+                height:20px;
+            }
+        }
+
+        .dividerCenter{
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        .at-divider{
+            width:95%;
+            height:0;
+            .at-divider__line{
+                height:1PX;
+            }
+        }
+        .at-button--secondary{
+            border:darkgray 1px solid;
+            color:darkgray;
+            background-color:$bgcolor;
+        }
+    }
+    .at-icon {
+        font-size:60px; 
+        color:darkgray;
+    }
+}
+}

@@ -1,0 +1,121 @@
+.root-web {
+  @include _root;
+
+  .patientForm {
+    .form_main {
+      :global {
+        .at-input {
+          width: 92%;
+          input {
+            color: #999;
+          }
+        }
+        .at-input__input {
+          text-align: right;
+          padding-right: 25px;
+        }
+      }
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 15px;
+      .gender {
+        display: flex;
+        justify-content: space-between;
+        font-size: $gg-font-size-normal;
+        padding: 15px 0 25px 0;
+        margin: 15px 30px;
+        border-bottom: 1px solid #d6e4ef;
+        .radio {
+          color: #747070;
+        }
+        :global {
+          .weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {
+            color: #bbb;
+          }
+        }
+      }
+      .nationSelect {
+        border-bottom: 1px solid #ede6e6;
+        margin: 0 30px;
+        padding-bottom: 15px;
+      }
+      .birthSelect {
+        border-bottom: 1px solid #ede6e6;
+        margin: 0 30px;
+        padding-bottom: 15px;
+      }
+    }
+    .picker_tip {
+      font-size: $gg-font-size-normal;
+      word-break: keep-all;
+      width: 100%;
+      text-align: right;
+      color: #747070;
+    }
+
+    .regionSelect {
+      display: flex;
+      font-size: $gg-font-size-normal;
+      justify-content: space-between;
+      align-items: center;
+      // height: 100px;
+      padding: 0 30px;
+      // .title {
+      //   font-size: $gg-font-size-normal;
+      //   align-self: center;
+      // }
+      // .select {
+      //   width: 350px;
+
+      // }
+      :global {
+        .root-web-comp_areaPicker_01 {
+          min-height: 0;
+        }
+      }
+    }
+    .displayNone {
+      :global {
+        .item-extra__icon-arrow {
+          display: none;
+        }
+      }
+    }
+    :global {
+      .at-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .at-list__item {
+          padding: 20px 0;
+          width: 100%;
+          .item-extra__icon {
+            right: 0px;
+          }
+
+          .item-extra__info {
+            color: #747070;
+            // padding-right: 5px;
+          }
+          .item-extra__icon-arrow {
+            font-size: $gg-font-size-normal;
+            color: #747070;
+          }
+        }
+      }
+      .at-list::after {
+        border: 0;
+      }
+      .at-list__item::after {
+        border: 0;
+      }
+      .at-button {
+        background-color: #3e8af8;
+        color: #fff;
+        width: 95%;
+        margin: 20px;
+      }
+    }
+  }
+}

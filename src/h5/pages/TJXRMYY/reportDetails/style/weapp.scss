@@ -1,0 +1,77 @@
+.root-weapp {
+    @include _root;
+    .reportDetails {
+      .headline {
+        font-size: $gg-font-size-lg;
+        margin: 10px 50px;
+      }
+      .topTips {
+        font-size: $gg-font-size-ssm;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffede9;
+        margin: 10px 20px;
+        padding: 20px 10px;
+        color: #c7616f;
+      }
+      .info {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 0 20px 30px 20px;
+        .infoItem {
+          margin-bottom: 15px;
+          @include gg-flex-layout;
+          align-items: flex-start;
+          font-size: $gg-font-size-sm;
+          .infoLabel {
+            color: #bbb;
+            width: 30%;
+          }
+          .infoValue {
+            width: 70%;
+          }
+        }
+      }
+      :global {
+        .table {
+          background-color: #fff;
+          .cardhead {
+            border-top: 8px solid $gg-main-color;
+            .tableBorder {
+              height: 80px;
+              line-height: 80px;
+              font-size: $gg-font-size-normal;
+            }
+            color: #bbb;
+          }
+          .cardcontent {
+            .flexCenter {
+              .tableBorder {
+                height: 60px;
+                line-height: 60px;
+                font-size: $gg-font-size-ssm;
+              }
+            }
+          }
+        }
+        .at-modal__overlay {
+          background-color: transparent;
+        }
+        .at-modal__container {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        .at-modal__content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // height: 60px;
+          min-height: 40px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  

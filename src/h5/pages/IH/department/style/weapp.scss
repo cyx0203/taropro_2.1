@@ -1,0 +1,63 @@
+.root-weapp {
+  @include _root;
+  background-color: #f5f5f5;
+  height: 100vh;
+  .department {
+    padding-top: 122px;
+    .main {
+      margin: 40px 20px;
+      padding: 20px 25px;
+      background-color: #fff;
+      border-radius: $gg-border-radius-md;
+      .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 160px;
+        height: 60px;
+        .underline {
+          height: 8px;
+          width: 100%;
+          background-color: $gg-main-color;
+          border-radius: $gg-border-radius-md;
+          margin: 0 auto;
+        }
+      }
+      .list {
+        .deptItem {
+          position: relative;
+          border-bottom: 3px solid #e4e4e4;
+          height: 80px;
+          line-height: 100px;
+          display: flex;
+          align-items: center;
+
+          .deptIcon {
+            width: 45px;
+            height: 45px;
+          }
+          .deptTxt {
+            margin-left: 20px;
+          }
+          .deptAtIcon {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+          }
+        }
+      }
+
+      .result {
+        padding: 100px;
+        :global {
+          .GGResult .title {
+            font-size: $gg-font-size-md;
+            color: #bbb;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

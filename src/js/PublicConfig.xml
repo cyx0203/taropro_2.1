@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Config>
+  <StepSheet>
+    <sheet>
+      <id>start</id>
+      <url>js/flow/start.flw</url>
+    </sheet>
+    <sheet>
+      <id>verify</id>
+      <url>js/flow/verify.flw</url>
+    </sheet>
+    <sheet>
+      <id>sender</id>
+      <url>js/flow/sender.flw</url>
+    </sheet>
+    <sheet>
+      <id>001</id>
+      <url>js/flow/001.mod</url>
+    </sheet>
+  </StepSheet>
+  <Namespace>
+    <param name="group/main" type="Group" url="js/group/main.js"/>
+    <param name="ajax/rhms" type="Ajax" url="js/ajax/rhms.js"/>
+    <param name="data/data" type="Data" url="js/data/data.js"/>
+    <param name="group/verify" type="Group" url="js/group/verify.js"/>
+    <param name="group/send" type="Group" url="js/group/send.js"/>
+  </Namespace>
+</Config>

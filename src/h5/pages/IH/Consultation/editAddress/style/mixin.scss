@@ -1,0 +1,86 @@
+@mixin _root {
+    .GGWingBlank{
+        padding: $gg-wingblank-md;
+    }
+    .editAddress_main{
+        margin-top: $gg-topbar-space;
+        width: 100%;
+        overflow-y: auto;
+        position: relative;
+    }
+    
+    .firstcontainer{
+        // height:200px;
+        background-color: #fff;
+        border-radius: $gg-border-radius-md;
+        margin:0 0 $gg-wingblank-md 0;
+        padding:$gg-wingblank-md;
+    }
+    
+    .padleft{
+        padding-left: $gg-wingblank-md;
+    }
+    
+    .atlist {
+        border:solid #808080 1px;
+        margin:$gg-wingblank-md;
+    }
+    
+    .bottombt {
+        // background-color:mediumseagreen;
+        color:white;
+        margin:40rpx 0 $gg-wingblank-md 0;
+        border-radius: 30px;
+    }
+    
+    .pay {
+        margin:0 $gg-wingblank-md;
+    }
+    
+    .inputPosition{
+        display: flex;
+        align-items: center;
+        height:50px;
+    }
+    
+    .inputPosition2{
+        position:relative;
+        bottom:20px;
+    }
+
+    
+
+    :global {
+        .at-input::after {
+            border:unset;
+        }
+        .at-switch::after {
+            border:unset;
+        }
+
+        .at-input__title {
+            width:70rpx;
+            color:darkgray;
+        }
+        .at-list__item-extra {
+            max-width: 400rpx;
+        }
+        .at-list__item {
+            padding: 24rpx 5rpx;
+        }
+    }
+    
+    
+    
+    .sub{ //副标题颜色
+        color:$gg-font-color-sub;
+    }
+    
+    .mainTitle { //主标题颜色
+        color:$gg-font-color-title;
+    }
+    
+    .textColor { //正文颜色
+        color:$gg-font-color-text;
+    }
+}

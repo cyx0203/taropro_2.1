@@ -1,0 +1,215 @@
+.root-web {
+  @include _root;
+
+  .selectType {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    .bannerImg {
+      @include gg-flex-layout;
+      width: 100%;
+      background-color: #fff;
+      // padding: 20px 0;
+      padding-top: 20px;
+      .swiper {
+        height: 380px;
+        width: 95%;
+        .swiperItem {
+          text-align: center;
+          .banner {
+            width: 99%;
+          }
+        }
+      }
+    }
+    .dateSelectArea {
+      height: 120px;
+      background-color: #fff;
+      @include gg-flex-layout;
+      justify-content: flex-start;
+      .dateItem {
+        @include gg-flex-layout;
+        flex-direction: column;
+        min-width: 80px;
+        margin: 15px;
+        .week {
+          font-size: $gg-font-size-sm;
+          color: red;
+        }
+        .day {
+          width: 60px;
+          height: 60px;
+          // background-color: #000;
+          border-radius: 30px;
+          @include gg-flex-layout;
+          font-size: $gg-font-size-md;
+          color: #4facff;
+          border: 1px solid #4facff;
+        }
+      }
+    }
+    .selectTypeArea {
+      background-color: #fff;
+      margin: 15px 0;
+      .typeItem:last-child {
+        border-bottom: 0;
+      }
+      .typeItem {
+        @include gg-flex-layout;
+        justify-content: space-between;
+        // padding: 10px 20px;
+        padding: 10px 0;
+        border-bottom: 1px solid #bbb;
+        margin: 0 20px;
+        .title {
+          font-size: $gg-font-size-md;
+        }
+        .subTitle {
+          font-size: $gg-font-size-sssm;
+          color: #bbb;
+        }
+        .btn {
+          width: 120px;
+          height: 60px;
+          @include gg-flex-layout;
+          font-size: $gg-font-size-sm;
+          margin: 0;
+          padding: 0;
+          background-color: #fff;
+          border: 1px solid #4facff;
+          border-radius: 35px;
+          color: #4facff;
+        }
+        .btn::after {
+          border: 0;
+        }
+      }
+    }
+    .infoArea {
+      background-color: #fff;
+      margin: 15px 0;
+      color: #7c7c7c;
+      .infoTitle {
+        font-size: $gg-font-size-md;
+        border-bottom: 1px solid #bbb;
+        margin: 10px 20px;
+        padding: 10px 0;
+        color: #454545;
+      }
+      .infoItem {
+        @include gg-flex-layout;
+        justify-content: flex-start;
+        font-size: $gg-font-size-sm;
+        margin: 15px;
+        color: #454545;
+        .infoIcon {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .floatBtn {
+      z-index: 99;
+      background-color: #efbb1a;
+      border: 2px solid #fff;
+      border-radius: 10px 0 0 10px;
+      @include gg-flex-layout;
+      flex-direction: column;
+      padding: 20px 10px;
+      border-right: none;
+      position: fixed;
+      right: 0;
+      top: 80px;
+      .clickImg {
+        width: 25px;
+        height: 50px;
+      }
+      .clickText {
+        font-size: $gg-font-size-llllg;
+        color: #fff;
+        width: 50px;
+        text-align: center;
+        line-height: 55px;
+      }
+    }
+    .nav {
+      justify-content: space-around;
+      height: 115px;
+      // z-index: 999;
+      :global {
+        .item {
+          .label {
+            font-size: $gg-font-size-ssm;
+          }
+        }
+      }
+    }
+    :global {
+      .at-modal__container {
+        width: 700px;
+        background-color: transparent;
+      }
+    }
+    .modalHead {
+      position: relative;
+      .headImg {
+        height: 300px;
+        width: 100%;
+      }
+      .headContent {
+        height: 120px;
+        position: absolute;
+        color: #fff;
+        @include gg-flex-layout;
+        font-size: $gg-font-size-llllg;
+        justify-content: flex-start;
+        top: 0;
+        left: 0;
+        right: 0;
+        .location {
+          width: 60px;
+          height: 60px;
+          margin: 0 30px;
+        }
+      }
+    }
+    .modalContent {
+      position: relative;
+      background-color: #fff;
+      width: 100%;
+      height: auto;
+      // padding: 30px;
+      border-radius: 30px;
+      margin-top: -200px;
+      z-index: 99;
+      @include gg-flex-layout;
+      flex-direction: column;
+
+      .shopItem:nth-last-child(1) {
+        border-bottom: none;
+      }
+      .shopItem {
+        width: 90%;
+        @include gg-flex-layout;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-bottom: 1px solid #e1e1e1;
+        .shopInfo {
+          .name {
+            font-size: $gg-font-size-lg;
+            color: #4c4c4c;
+          }
+        }
+        :global {
+          .at-icon {
+            font-size: $gg-font-size-md;
+            color: #797979;
+          }
+        }
+      }
+    }
+  }
+}

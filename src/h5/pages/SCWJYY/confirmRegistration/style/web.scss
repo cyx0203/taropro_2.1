@@ -1,0 +1,80 @@
+.root-web {
+  @include _root;
+
+  .confirmRegistration {
+    @include gg-wing-blank(30px);
+    // @include gg-flex-layout(column);
+    font-size: $gg-font-size-sm;
+    .confshowList {
+      margin: 20px 0;
+      background-color: #fff;
+      border-radius: 10px;
+      .confmain-content {
+        padding: 10px 30px;
+        .confitem {
+          @include gg-flex-layout;
+          justify-content:flex-start;
+          padding: 40px;
+          border-bottom: 1px solid #ddd;
+          .label {
+            width: 180px;
+            color: #bbb;
+          }
+        }
+        .confitem-patient {
+          @include gg-flex-layout;
+          justify-content: space-between;
+          padding: 40px;
+          border-bottom: 1px solid #ddd;
+          .confpatient {
+            @include gg-flex-layout;
+            justify-content:flex-start;
+            .label {
+              width: 160px;
+              color: #bbb;
+            }
+          }
+          .btn {
+            padding: 5px 30px;
+            background-color: $gg-main-color;
+            border-radius: 50px;
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            line-height: 38px;
+            color: #fff;
+            align-self: flex-end;
+            font-size: $gg-font-size-ssm;
+          }
+        }
+      }
+    }
+    .GGTips {
+      margin: 0 65px;
+      margin-bottom: 15px;
+      .at-row {
+        color: red;
+        .rowCenter2 {
+          color: #f3a0a0;
+        }
+      }
+    }
+    .confirmBtn {
+      .at-button {
+        background-color:  $gg-main-color;
+        color: #fff;
+        border-radius: 15px;
+        
+      }
+      margin-bottom: 20px;
+    }
+    .cancelBtn {
+      .at-button {
+        background-color: #fff;
+        color: $gg-main-color;;
+        border: 1px solid $gg-main-color;
+        border-radius: 15px;
+      }
+    }
+  }
+}

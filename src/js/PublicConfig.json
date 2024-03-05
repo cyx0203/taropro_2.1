@@ -1,0 +1,51 @@
+{
+	"StepSheet": {
+		"sheet": [
+			{
+				"id": "start",
+				"url": "js/flow/start.flw"
+			},
+			{
+				"id": "verify",
+				"url": "js/flow/verify.flw"
+			},
+			{
+				"id": "sender",
+				"url": "js/flow/sender.flw"
+			},
+			{
+				"id": "001",
+				"url": "js/flow/001.mod"
+			}
+		]
+	},
+	"Namespace": {
+		"param": [
+			{
+				"name": "group/main",
+				"type": "Group",
+				"url": "js/group/main.js"
+			},
+			{
+				"name": "ajax/rhms",
+				"type": "Ajax",
+				"url": "js/ajax/rhms.js"
+			},
+			{
+				"name": "data/data",
+				"type": "Data",
+				"url": "js/data/data.js"
+			},
+			{
+				"name": "group/verify",
+				"type": "Group",
+				"url": "js/group/verify.js"
+			},
+			{
+				"name": "group/send",
+				"type": "Group",
+				"url": "js/group/send.js"
+			}
+		]
+	}
+}

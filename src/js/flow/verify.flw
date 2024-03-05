@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config><pupath>js.PublicConfig.xml</pupath><flowtype>flw</flowtype><Page id="_G0" stype="GROUP" fn="group/verify.Page_Pharmacist_VerifyMasters" load="" next="_G1,_G3" loadtimeout="" flag=""/><Page id="_E0" stype="END" pageid="_G1" sheetid="start"/><Page id="_G1" stype="GROUP" fn="group/verify.Page_Pharmacist_Verify_Opt" load="" next="_G2,_E0" loadtimeout="" flag=""/><Page id="_G2" stype="GROUP" fn="group/verify.Page_Pharmacist_Verify_Refused" load="" next="_G4" loadtimeout="" flag=""/><Page id="_G3" stype="GROUP" fn="group/verify.Page_Pharmacist_Verify_See" load="" next="_G0" loadtimeout="" flag=""/><Page id="_G4" stype="GROUP" fn="group/verify.Page_Pharmacist_Verify_Result" load="" next="_G0" loadtimeout="" flag=""/><Diagram>{ "class": "GraphLinksModel",
+  "copiesKey": false,
+  "linkKeyProperty": "key",
+  "modelData": {"position":"-736 -319", "canRelink":false},
+  "nodeDataArray": [ 
+{"key":"_G0", "text":"列表页", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/verify.Page_Pharmacist_VerifyMasters", "flag":"", "load":"", "next":"_G1,_G3", "sub":true, "loc":"-390 -180"},
+{"key":"_E0", "geo":"stop", "text":"跳转/结束", "color":"#ea2857", "category":"quit", "type":"END", "pageid":"_G1", "sheetid":"start", "loc":"-610 -60", "next":"", "load":""},
+{"key":"_G1", "text":"审核操作页", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/verify.Page_Pharmacist_Verify_Opt", "flag":"", "load":"", "next":"_G2,_E0", "sub":true, "loc":"-160 -180"},
+{"key":"_G2", "text":"拒绝理由填写页", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/verify.Page_Pharmacist_Verify_Refused", "flag":"", "load":"", "next":"_G4", "sub":true, "loc":"110 -180"},
+{"key":"_G3", "text":"查看详情页", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/verify.Page_Pharmacist_Verify_See", "flag":"", "load":"", "next":"_G0", "sub":true, "loc":"-160 -35.743920898437494"},
+{"key":"_G4", "text":"填写成功", "isGroup":true, "category":"OfGroups", "type":"GROUP", "fn":"group/verify.Page_Pharmacist_Verify_Result", "flag":"", "load":"", "next":"_G0", "sub":true, "loc":"380 -180"}
+ ],
+  "linkDataArray": [ 
+{"from":"_G0", "to":"_G1", "key":-1, "points":[-299.7157287525381,-179.5262451171875,-168.76142374915398,-179.5262451171875]},
+{"from":"_G1", "to":"_G2", "key":-2, "points":[-39.715728752538126,-179.5262451171875,101.23857625084605,-179.5262451171875]},
+{"from":"_G0", "to":"_G3", "key":-3, "points":[-300.5454006144064,-150.85568758120172,-163.64387570981253,-70.2480255168686]},
+{"from":"_G2", "to":"_G4", "key":-4, "points":[260.2842712474619,-179.5262451171875,371.23857625084605,-179.5262451171875]}
+ ]}</Diagram></Config>

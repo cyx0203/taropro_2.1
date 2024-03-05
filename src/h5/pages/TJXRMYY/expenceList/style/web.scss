@@ -1,0 +1,141 @@
+.root-web {
+  @include _root;
+
+ 
+  .expenceList {
+    background-color: #fff;
+    // height: 100vh;
+    padding-top: 20px;
+    .dateSelect {
+      @include gg-flex-layout;
+      :global {
+        .at-list {
+          background-color: transparent;
+          border: 1px solid #bbb;
+          border-radius: 15px;
+          .at-list__item {
+            padding: 0 10px;
+            .at-list__item-content {
+              display: none;
+            }
+            .item-extra__info {
+              color: #000;
+            }
+            .item-extra__info::after {
+              position: absolute;
+              top: 25px;
+              right: 0;
+              content: "";
+              width: 0;
+              height: 0;
+              overflow: hidden;
+              font-size: 0;
+              line-height: 0;
+              border-width: 10px;
+              border-style: solid;
+              border-color: #bbb transparent transparent transparent;
+            }
+          }
+        }
+      }
+    }
+    .content {
+      // height: 100%;
+      padding-bottom: 50px;
+      .main {
+        .card {
+          padding: 15px 25px;
+          background-color: #f7f3f4;
+          margin: 25px 20px;
+          border-radius: 15px;
+          .info {
+            font-size: $gg-font-size-normal;
+            display: flex;
+            flex-direction: column;
+            .item {
+              display: flex;
+              align-items: center;
+              margin: 8px 0;
+              .icon {
+                width: 40px;
+                height: 40px;
+              }
+              .label {
+                margin: 0 15px;
+              }
+              .value {
+                width: 450px;
+              }
+            }
+          }
+          .btn {
+            display: flex;
+            align-items: center;
+            font-size: $gg-font-size-ssm;
+            color: #bbb;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+          }
+        }
+      }
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult {
+          @include gg-flex-layout(column);
+
+          .title {
+            font-size: $gg-font-size-sm;
+            color: #bbb;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .curtainData {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      height: 1000px;
+      .title {
+        display: flex;
+        font-size: $gg-font-size-normal;
+        border-bottom: 1px solid #ddd;
+        align-items: center;
+        color: #bbb;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        .line {
+          background-color: #276ec3;
+          height: 35px;
+          width: 8px;
+          margin-right: 15px;
+        }
+      }
+      :global {
+        .root-web-comp_table_01 .table {
+          .cardhead {
+            background-color: #fff;
+          }
+          .divider {
+            display: none;
+          }
+        }
+        .root-web-comp_table_01 .table .flexCenter {
+          color: #bbb;
+        }
+      }
+    }
+  }
+}
+:global {
+  .weui-picker__content {
+    font-size: $gg-font-size-lllg;
+  }
+  .weui-picker__hd {
+    font-size: $gg-font-size-lllg !important;
+  }
+}

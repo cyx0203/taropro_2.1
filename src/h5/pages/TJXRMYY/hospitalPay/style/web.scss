@@ -1,0 +1,64 @@
+.root-web {
+  @include _root;
+
+  .hospitalPay {
+    .upper {
+      .title {
+        padding: 15px 30px;
+        font-size: $gg-font-size-lg;
+      }
+      .patientInfo {
+        background-color: #fff;
+        padding: 20px 30px;
+        .infoItem {
+          padding: 15px 0;
+          @include gg-flex-layout;
+          border-bottom: 1px solid #f7f3f4;
+          .infoLabel {
+            font-size: $gg-font-size-sm;
+            color: #5c5454;
+            width: 50%;
+          }
+          .infoValue {
+            font-size: $gg-font-size-lg;
+            width: 50%;
+          }
+        }
+      }
+    }
+    .payment {
+      .title {
+        padding: 15px 30px;
+        font-size: $gg-font-size-lg;
+      }
+      .payNumber {
+        :global {
+          .at-input {
+            margin: 0;
+            padding: 20px 30px;
+            .at-input__title {
+              font-size: $gg-font-size-sm;
+              color: #5c5454;
+            }
+            .at-input__input {
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              height: 80px;
+              display: flex;
+              align-items: center;
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+    :global {
+      .at-button {
+        background-color: #3e8af8;
+        color: #fff;
+        width: 95%;
+        margin: 20px;
+      }
+    }
+  }
+}

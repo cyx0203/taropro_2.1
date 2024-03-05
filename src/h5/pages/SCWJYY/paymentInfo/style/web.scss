@@ -1,0 +1,30 @@
+.root-web {
+  @include _root;
+
+  .paymentInfo {
+    @include gg-flex-layout(column);
+    .content {
+      margin: 10px 0;
+      background-color: #fff;
+      width: 100%;
+      .item {
+        font-size: $gg-font-size-ssm;
+        @include gg-flex-layout;
+        justify-content: space-between;
+        padding: 30px;
+        .label {
+          color: #000;
+        }
+        .value {
+          color: #999999;
+        }
+      }
+    }
+    .at-button {
+      background-color: #31c8b5;
+      color: #fff;
+      width: 90%;
+      margin: 20px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.root-weapp {
+    @include _root;
+  
+    .bodyInfo {
+      .switchArea {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .gender {
+            margin: 0 50px;
+        }
+      }
+      .bodyPartArea {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 750px;
+        height: 1120px;
+        .bodyImg {
+          position: absolute;
+          left: 130px;
+          top: 120px;
+          width: 500px;
+          height: 1000px;
+          background-size: 500px 100%;
+          background-repeat: no-repeat;
+  
+        }
+        .bodyPartName {
+          width: 750px;
+          display: flex;
+          justify-content: space-between;
+          .nameLeft {
+            margin-left: 60px;
+            .bodyBtn {
+              background-color: $gg-main-color;
+              color: #fff;
+              width: 150px;
+              height: 90px;
+            }
+            .bodyBtn:first-child {
+              margin-top: 40px;
+              margin-bottom: 120px;
+            }
+            .bodyBtn:last-child {
+              margin-top: 140px;
+            }
+          }
+          .nameRight {
+            margin-right: 50px;
+            .bodyBtn {
+              background-color: $gg-main-color;
+              color: #fff;
+              width: 150px;
+              height: 90px;
+            }
+            .bodyBtn:first-child {
+              margin-top: 65px;
+              margin-bottom: 120px;
+            }
+            .bodyBtn:last-child {
+              margin-top: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,30 @@
+.root-web-comp_result_edit {
+    // @include _root;
+    .GGResult{
+        // text-align: center;
+        padding:$gg-whitespace-md;
+        margin:$gg-whitespace-md;
+        .flexCenter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .imgContainer{
+            width:$gg-font-weight-sm;
+            height:$gg-font-weight-sm;
+            .img{
+                width:200px;
+                height:200px;
+            }
+        }
+        
+        .title{
+            font-size: $gg-font-size-lllg;
+            font-weight: bold;
+            margin:$gg-whitespace-sm 0;
+        }
+        .subTitle{
+            font-size: $gg-font-size-normal;
+        }
+    }
+}

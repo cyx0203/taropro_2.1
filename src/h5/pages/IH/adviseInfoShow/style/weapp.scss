@@ -1,0 +1,36 @@
+.root-weapp {
+  @include _root;
+  .adviseInfoShow {
+    .adviseFormItem {
+      @include gg-flex-layout(row, space-between, center);
+      padding: 20px 30px;
+      border-bottom: 1px solid #ddd;
+      background-color: #fff;
+      .label {
+        font-size: $gg-font-size-sm;
+      }
+      .value {
+        @include gg-flex-layout;
+        font-size: $gg-font-size-sm;
+      }
+    }
+    .formBlock {
+      font-size: $gg-font-size-sm;
+      .blockLable {
+        margin: 15px 10px;
+        @include gg-flex-layout;
+        justify-content: flex-start;
+        .line {
+          width: 6px;
+          height: 30px;
+          background-color: $gg-main-color;
+          margin-right: 10px;
+        }
+      }
+      .blockValue {
+        background-color: #fff;
+        padding: 20px 30px;
+      }
+    }
+  }
+}

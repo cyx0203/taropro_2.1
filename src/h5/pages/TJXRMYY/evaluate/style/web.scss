@@ -1,0 +1,28 @@
+.root-web {
+@include _root;
+
+.evaluate {
+    background-color: #fff;
+    @include gg-flex-layout(column);
+    padding: 10px 0;
+    @include gg-wing-blank(20px);
+    .main {
+        :global {
+            .mainPart {
+                .card {
+                    border-radius: 20px;
+                    box-shadow: 3px 3px 8px  #bbb;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    :global {
+        .at-button--primary {
+            margin-top: 25px;
+            width: 95%;
+            // margin: 15px 0;
+        }
+    }
+}
+}

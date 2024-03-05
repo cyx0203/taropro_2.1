@@ -1,0 +1,89 @@
+.root-web {
+  @include _root;
+
+  .orderRegistered {
+    .patient_main {
+      font-size: $gg-font-size-normal;
+      @include gg-flex-layout;
+      justify-content: space-between;
+      margin: 20px 15px;
+      padding: 10px 30px;
+      background-color: #fff;
+      height: 120px;
+      border-radius: 10px;
+      .patientInfo {
+        height: 100%;
+        @include gg-flex-layout(column);
+        justify-content: space-around;
+        align-items: flex-start;
+        .number {
+          font-size: $gg-font-size-sm;
+          color: #bbb;
+        }
+      }
+    }
+    .tip {
+      margin: 20px 15px;
+      font-size: $gg-font-size-sssm;
+      color: #bbb;
+    }
+    .content_main {
+      margin: 20px 15px;
+      border-radius: 10px;
+      background-color: #fff;
+      .at-tabs__header {
+        border-radius: 10px;
+      }
+      .at-tabs__item--active {
+        color: $gg-main-color;
+      }
+      .at-tabs__item-underline {
+        background-color: $gg-main-color;
+      }
+      .card_main {
+        .cardlist {
+          padding: 0;
+          .card {
+            border: 1px solid #bbb;
+            border-radius: 20px;
+            .cardBottom {
+              background-color: #fff;
+              .gridCenter {
+                @include gg-flex-layout(column);
+              }
+              color: #bbb;
+              .btn {
+                margin: 5px 20px;
+                width: 160px;
+                .at-button--primary {
+                  background-color: $gg-main-color;
+                  border: 0;
+                  border-radius: 50px;
+                }
+              }
+            }
+            .cardTop {
+              background-color: #d6ebdc;
+            }
+            .fontClass-title {
+              font-size: $gg-font-size-normal;
+            }
+            .fontClass-content {
+              font-size: $gg-font-size-ssm;
+            }
+          }
+        }
+      }
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult .title {
+          font-size: $gg-font-size-sm;
+          color: #bbb;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

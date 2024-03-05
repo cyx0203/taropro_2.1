@@ -1,0 +1,59 @@
+.root-web {
+  @include _root;
+
+  .resultSubmit {
+    font-size: $gg-font-size-normal;
+    .showList {
+      background-color: #fff;
+      .title {
+        padding: 5px 40px;
+        padding-top: 25px;
+      }
+      .main_content {
+        padding: 5px 60px;
+        .item {
+          @include gg-flex-layout;
+          justify-content:flex-start;
+          margin-bottom: 25px;
+          .label {
+            color: #999999;
+            width: 130px;
+          }
+        }
+        .item_patient {
+          @include gg-flex-layout;
+          justify-content: space-between;
+          margin: 25px 0;
+          .patient {
+            @include gg-flex-layout;
+            justify-content:flex-start;
+            .label {
+              color: #999999;
+              width: 130px;
+            }
+          }
+
+          .btn {
+            padding: 5px 30px;
+            background-color: $gg-main-color;
+            border-radius: 50px;
+            width: 90px;
+            height: 40px;
+            text-align: center;
+            line-height: 38px;
+            color: #fff;
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+    :global {
+      .at-button {
+        margin-top: 20px;
+        background-color: $gg-main-color;
+        color: #fff;
+        width: 90%;
+      }
+    }
+  }
+}

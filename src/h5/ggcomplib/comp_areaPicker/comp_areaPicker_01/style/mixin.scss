@@ -1,0 +1,20 @@
+@mixin _root {
+    // min-height: 1000px;
+    .GGPicker{
+        .atlist{
+            .atlistItem{
+                // display: flex;
+            }
+        }
+
+        // .at-list__item .item-extra__info {
+        //     overflow:unset;
+        // }
+        .at-list__item-extra{
+            max-width: unset;
+        }
+    }
+    
+    
+    
+}

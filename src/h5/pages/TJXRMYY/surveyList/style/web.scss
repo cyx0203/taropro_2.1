@@ -1,0 +1,53 @@
+.root-web {
+  @include _root;
+
+  .surveyList {
+    .item {
+        // margin: 10px 0;
+        :global {
+            .at-card {
+                margin: 10px 15px;
+                .at-card__header {
+                    border: 0;
+                    .at-card__header-title {
+                        color: #000;
+                        font-size: $gg-font-size-lg;
+                    }
+                    .at-card__header-extra {
+                        font-size: $gg-font-size-ssm;
+                        color: #bbb;
+                    }
+                }
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            font-size: $gg-font-size-ssm;
+            color: #bbb;
+            .btn {
+                :global {
+                    .at-icon {
+                        margin-left: 10px;
+                        font-size: $gg-font-size-lg;
+                    }
+                }
+            }
+        }
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult {
+          @include gg-flex-layout(column);
+
+          .title {
+            font-size: $gg-font-size-sm;
+            color: #bbb;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

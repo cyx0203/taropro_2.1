@@ -1,0 +1,37 @@
+.root-web {
+  @include _root;
+
+  .NATType {
+    .card {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .cardInfo {
+        @include gg-flex-layout;
+        justify-content:flex-start;
+        .card_img {
+          width: 100px;
+          height: 100px;
+          margin-right: 20px;
+        }
+        .NAT_info {
+          font-size: $gg-font-size-ssm;
+          color: #bbb;
+          height: 100px;
+          @include gg-flex-layout(column);
+          justify-content: space-around;
+          align-items: flex-start;
+        }
+      }
+    }
+
+    .at-card {
+      border: 0;
+    }
+    .at-card__header {
+      border: 0;
+    }
+    .at-card__content {
+      padding: 0 30px 30px 30px;
+    }
+  }
+}

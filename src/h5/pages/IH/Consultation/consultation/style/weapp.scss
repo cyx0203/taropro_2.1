@@ -1,0 +1,129 @@
+.root-weapp {
+    @include _root;
+
+    .GGWhiteSpace{
+        height: $gg-whitespace-md;
+    }
+
+    .GGWingBlank{
+        padding: $gg-wingblank-md;
+    }
+
+    .consultation_main {
+        margin-top: $gg-topbar-space;
+        width: 100%;
+        overflow-y: auto;
+        position: relative;
+        color: $gg-font-color-title;
+    }
+    
+    .tb {
+        // background-color: #fff;
+        // margin:20px 20px 0 20px;
+        padding: 20px;
+    }
+    
+    .at9 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    
+    .co3 {
+        margin-top: 20px;
+    }
+    
+    .row2 {
+        display: flex;
+        justify-content: center;
+        margin-left: -120px;
+    }
+    
+    .ttb {
+        // height:200px;
+        background-color: #fff;
+        border-radius: $gg-border-radius-md;
+        // margin:0px 20px 0 20px;
+        padding: 20px;
+    }
+    
+    .icoImg {
+        // border: solid;
+        // border-color: black;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .divline {
+        border: 0.5px dashed #aaa;
+        width: 99%;
+        margin: 20px 0;
+    }
+    
+    .bottombt {
+        background-color: mediumseagreen;
+        color: white;
+        margin: 20px 50px 0px 50px;
+        border-radius: 30px;
+    }
+    
+    .weighttitle {
+        // font-weight:600;
+        font-size: 36px;
+        margin: 20px 0;
+    }
+    
+    .grayfont {
+        color: gray;
+    }
+    
+    .consultation_sub_text {
+        color: $gg-font-color-sub;
+    }
+    
+    .sign {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .sign_main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .sign_sub {
+        width: 300px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        margin: 20px;
+    }
+    
+    .signImg_small {
+        // border: black solid;
+        width: 180px;
+        height: 50px;
+    }
+    
+    .signImg_big {
+        // border: black solid;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .sub{ //副标题颜色
+        color:$gg-font-color-sub;
+    }
+    
+    .mainTitle { //主标题颜色
+        color:$gg-font-color-title;
+    }
+    
+    .textColor { //正文颜色
+        color:$gg-font-color-text;
+    }
+}

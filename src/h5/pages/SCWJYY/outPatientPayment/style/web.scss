@@ -1,0 +1,77 @@
+.root-web {
+  @include _root;
+
+  .outPatientPayment {
+    background-color: #fff;
+    height: 100vh;
+    font-size: $gg-font-size-ssm;
+    .content {
+      @include gg-flex-layout(column);
+      background-color: #fff;
+      margin: 10px 30px;
+      padding: 0 30px;
+      .payBarCode {
+        margin-top: 20px;
+        .barCode_img {
+          width: 300px;
+          height: 150px;
+          border: 1px solid #bbb;
+        }
+      }
+      .payNumber {
+        margin: 10px 0;
+        color: #bbb;
+      }
+      .paymentResult {
+        width: 100%;
+        @include gg-flex-layout;
+        justify-content: space-between;
+        border-bottom: 1px dashed #ddd;
+        padding: 0 30px 30px 30px;
+      }
+      .payment_info {
+        width: 100%;
+        margin-top: 30px;
+        .item {
+          color: #bbb;
+          margin: 10px 0;
+          width: 100%;
+          @include gg-flex-layout;
+          justify-content: space-between;
+          .label {
+            width: 110px;
+          }
+          .value {
+            color: #000;
+          }
+        }
+      }
+    }
+    .footer {
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      bottom: 0;
+      background-color: #f1faf5;
+      @include gg-flex-layout;
+      justify-content:flex-start;
+      .paySum {
+        width: 65%;
+        font-size: $gg-font-size-normal;
+        .money {
+          color: $gg-main-color;
+        } 
+        text-align: center;
+      }
+      .payBtn {
+        width: 35%;
+        height: 100%;
+        background-color: $gg-main-color;
+        color: #fff;
+        font-size: $gg-font-size-normal;
+        line-height: 80px;
+        text-align: center;
+      }
+    }
+  }
+}

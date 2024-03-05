@@ -1,0 +1,48 @@
+@mixin _root {
+    // @include gg-flex-layout;
+    .mainPart{
+        // @include gg-flex-layout;
+        .card{
+            .card_top{
+                @include gg-flex-layout;
+                border-radius: $gg-border-radius-md $gg-border-radius-md 0 0;
+                font-size: $gg-font-size-md;
+                font-weight: bold;
+                background-color: $gg-secondary-color;
+                padding:$gg-whitespace-sm 0;
+            }
+            .card_body{
+                @include gg-flex-layout;
+                padding:$gg-whitespace-lg 0;
+                .card_body_content{
+                    @include gg-flex-layout;
+                    .card_img{
+                        width:50px;
+                        height:50px;
+                        // @include gg-flex-layout;
+                    }
+                    .card_txt{
+                        font-size: $gg-font-size-md;
+                        margin-left:10px;
+                        // @include gg-flex-layout;
+                    }
+                }
+                
+            }
+        }
+    }
+    .subPart{
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .at-tag {
+            font-size:12px;
+            margin:10px 18px;
+            width:21%;
+        }
+    }
+    .btn{
+        
+    }
+}

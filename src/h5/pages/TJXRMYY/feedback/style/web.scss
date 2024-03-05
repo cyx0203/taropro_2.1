@@ -1,0 +1,85 @@
+.root-web {
+  @include _root;
+
+  .feedback {
+    background-color: #fff;
+    padding: 0 20px;
+    height: 100vh;
+    .inputMain {
+      padding: 15px 20px;
+      :global {
+        .at-input__input {
+          border: 1px solid #bbb;
+          border-radius: 10px;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+        }
+      }
+    }
+    .textArea {
+      margin: 15px 0;
+    }
+    .typeSelect {
+      margin: 0 50px;
+      padding: 15px 0;
+    }
+    .picker_tip {
+      font-size: $gg-font-size-normal;
+      word-break: keep-all;
+      width: 100%;
+      // text-align: center;
+      color: #747070;
+      .tip {
+        margin-right: 20px;
+      }
+    }
+    :global {
+      .at-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .at-list__item {
+          padding: 20px 0;
+          width: 100%;
+
+          .item-extra__icon {
+            right: 0px;
+          }
+
+          .item-extra__info {
+            color: #747070;
+            // padding-right: 5px;
+          }
+          .item-extra__icon-arrow {
+            font-size: $gg-font-size-normal;
+            color: #747070;
+          }
+        }
+      }
+      .at-list {
+        background-color: transparent;
+      }
+      .at-list::after {
+        border: 0;
+      }
+      .at-list__item::after {
+        border: 0;
+      }
+      .at-input {
+        background-color: transparent;
+      }
+      .at-input::after {
+        border: 0;
+      }
+      .at-button {
+        background-color: #3e8af8;
+        color: #fff;
+        width: 95%;
+        margin: 20px;
+      }
+    }
+  }
+}

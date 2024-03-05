@@ -1,0 +1,137 @@
+.root-web {
+  @include _root;
+
+  .reportDocuments {
+    .topTips {
+      font-size: $gg-font-size-ssm;
+      display: flex;
+      justify-content: space-between;
+      background-color: #ffede9;
+      margin: 10px 20px;
+      padding: 20px 10px;
+      color: #c7616f;
+    }
+    :global {
+      .at-tabs {
+        .at-tabs__header {
+          width: 35%;
+          background-color: transparent;
+          .at-tabs__item {
+            padding: 10px 20px;
+            font-size: $gg-font-size-sm;
+            color: #bbb;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            .at-tabs__item-underline {
+              background-color: $gg-main-color;
+              height: 8px;
+              width: 48%;
+              left: 26.5%;
+            }
+          }
+          .at-tabs__item--active {
+            color: $gg-main-color;
+            font-size: $gg-font-size-lg;
+          }
+        }
+      }
+    }
+
+    .tabContent {
+      .dateSelect {
+        @include gg-flex-layout;
+        margin-top: 10px;
+        :global {
+          .at-list {
+            background-color: transparent;
+            border: 1px solid #bbb;
+            border-radius: 15px;
+            .at-list__item {
+              padding: 0 10px;
+              .at-list__item-content {
+                display: none;
+              }
+              .item-extra__info {
+                color: #000;
+              }
+              .item-extra__info::after {
+                position: absolute;
+                top: 25px;
+                right: 0;
+                content: "";
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                font-size: 0;
+                line-height: 0;
+                border-width: 10px;
+                border-style: solid;
+                border-color: #bbb transparent transparent transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+    .cardContent {
+      :global {
+        .card {
+          .cardTop {
+            justify-content: space-around;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            .fontClass-sm {
+              color: #bbb;
+              font-size: $gg-font-size-sssm;
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+          .cardBottom {
+            background-color: #fff;
+            padding-bottom: 15px;
+            .fontClass-content {
+              margin-bottom: 5px;
+            }
+            .label {
+              font-size: $gg-font-size-sm;
+              @include gg-flex-layout;
+            }
+            .value {
+              font-size: $gg-font-size-sm;
+            }
+            .card_footer {
+              border-top: 1px solid #ddd;
+              margin-top: 20px;
+              padding: 10px 20px 0 20px;
+            }
+          }
+        }
+      }
+
+      .footerBtn {
+        @include gg-flex-layout;
+        justify-content: space-between;
+        color: #bbb;
+        .btnText {
+          font-size: $gg-font-size-ssm;
+        }
+      }
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult {
+          @include gg-flex-layout(column);
+
+          .title {
+            font-size: $gg-font-size-sm;
+            color: #bbb;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

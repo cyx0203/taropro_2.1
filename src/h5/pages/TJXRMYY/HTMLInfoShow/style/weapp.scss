@@ -1,0 +1,16 @@
+.root-weapp {
+    @include _root;
+  
+    .htmlinfoshow {
+      background-color: #fff;
+      font-size: $gg-font-size-sm;
+      .main {
+        line-height: 50px;
+        padding: 20px 30px;
+      }
+      p {
+        padding: 10px 20px;
+      }
+    }
+  }
+  

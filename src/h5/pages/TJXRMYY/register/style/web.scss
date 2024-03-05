@@ -1,0 +1,109 @@
+.root-web {
+  @include _root;
+
+  .register {
+    .form_main {
+      :global {
+        .at-input {
+          width: 92%;
+        }
+        .at-input__input {
+          text-align: left;
+          padding-right: 25px;
+        }
+      }
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 15px;
+      .nationSelect {
+        border-bottom: 1px solid #ede6e6;
+        margin: 0 30px;
+        padding-bottom: 15px;
+      }
+      .regionSelect {
+        display: flex;
+        flex-direction: column;
+        font-size: $gg-font-size-normal;
+        justify-content: space-between;
+        border-bottom: 1px solid #ede6e6;
+        margin: 0 30px;
+        padding: 15px 0px;
+        :global {
+          .root-web-comp_areaPicker_01 {
+            min-height: 0;
+          }
+          .at-list__item-container {
+            display: block;
+          }
+          .at-list__item-extra {
+            text-align: left;
+          }
+          .at-list .at-list__item {
+            padding-bottom: 0;
+          }
+        }
+      }
+      .displayNone {
+        :global {
+          .item-extra__icon-arrow {
+            display: none;
+          }
+          .at-list__item .item-extra__info {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+    .picker_tip {
+      font-size: $gg-font-size-normal;
+      word-break: keep-all;
+      width: 100%;
+      text-align: right;
+      color: #747070;
+    }
+    :global {
+      .at-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .at-list__item {
+          padding: 20px 0;
+          width: 100%;
+          .item-extra__icon {
+            right: 0px;
+          }
+
+          .item-extra__info {
+            color: #747070;
+            // padding-right: 5px;
+          }
+          .item-extra__icon-arrow {
+            font-size: $gg-font-size-normal;
+            color: #747070;
+          }
+        }
+      }
+      .at-list::after {
+        border: 0;
+      }
+      .at-list__item::after {
+        border: 0;
+      }
+      .at-button {
+        background-color: #3e8af8;
+        color: #fff;
+        width: 95%;
+        margin: 20px;
+      }
+    }
+  }
+}
+:global {
+  .weui-picker__content {
+    font-size: $gg-font-size-lllg;
+  }
+  .weui-picker__hd {
+    font-size: $gg-font-size-lllg !important;
+  }
+}

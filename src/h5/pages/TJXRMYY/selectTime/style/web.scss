@@ -1,0 +1,34 @@
+.root-web {
+  @include _root;
+
+  .selectTime {
+    position: relative;
+    .tips {
+      width: 100%;
+      height: 50px;
+      padding: 20px;
+      background-color: rgba($gg-main-color, 0.8);
+      color: #fff;
+      font-size: $gg-font-size-sm;
+      @include gg-flex-layout;
+      justify-content: flex-start;
+    }
+    .btn {
+      position: fixed;
+      bottom: 60px;
+      color: #fff;
+      font-size: $gg-font-size-lg;
+      left: 0;
+      right: 0;
+      background-color: $gg-main-color;
+      width: 90%;
+    }
+    :global {
+      .at-calendar__list.flex
+        .flex__item--selected-head.flex__item--selected-tail
+        .flex__item-container {
+        background-color: $gg-main-color;
+      }
+    }
+  }
+}

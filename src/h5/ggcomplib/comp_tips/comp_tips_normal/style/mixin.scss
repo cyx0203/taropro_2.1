@@ -1,0 +1,28 @@
+@mixin _root {
+    .GGTips{
+        margin:$gg-whitespace-md 0;
+        .flexCenter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rowCenter{
+            display: flex;
+            align-items: center;
+            font-size: $font-size-sm;
+            font-weight: bold;
+        }
+        .rowCenter2{
+            display: flex;
+            align-items: center;
+            font-size: $font-size-ssm;
+            
+            word-break:break-all;
+            white-space: normal;
+        }
+        .icon{
+            width:$width;
+            height:$height;
+        }
+    }
+}

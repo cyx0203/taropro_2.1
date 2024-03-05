@@ -1,0 +1,110 @@
+.root-weapp {
+  @include _root;
+  .advise {
+    :global {
+      .at-tabs {
+        .at-tabs__item-underline {
+          background-color: $gg-main-color;
+          height: 8px;
+          border-radius: $gg-border-radius-md;
+          width: 80%;
+          left: 10%;
+        }
+      }
+    }
+    .adviseFormItem {
+      @include gg-flex-layout(row, space-between, center);
+      padding: 20px 30px;
+      border-bottom: 1px solid #ddd;
+      background-color: #fff;
+      .label {
+        font-size: $gg-font-size-md;
+      }
+      .value {
+        color: #bbb;
+        @include gg-flex-layout;
+        font-size: $gg-font-size-sm;
+      }
+      .formInput {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        font-size: $gg-font-size-md;
+      }
+    }
+    .formBlock {
+      .blockLable {
+        margin: 15px 10px;
+        font-size: $gg-font-size-md;
+        @include gg-flex-layout;
+        justify-content: flex-start;
+        .line {
+          width: 6px;
+          height: 30px;
+          background-color: $gg-main-color;
+          margin-right: 10px;
+        }
+      }
+      .textarea {
+        margin: 10px;
+        width: 97.5%;
+      }
+      :global {
+        .at-image-picker {
+          background-color: #fff;
+        }
+      }
+    }
+    .submitBtn {
+      width: 95%;
+      background-color: $gg-main-color;
+      font-size: $gg-font-size-llg;
+      color: #fff;
+      text-align: center;
+      border-radius: 15px;
+      margin-top: 40px;
+    }
+    .adviseCard {
+      background-color: #fff;
+      border-radius: 15px;
+      margin: 20px;
+      .head {
+        @include gg-flex-layout;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: $gg-font-size-md;
+        border-bottom: 1px solid #ddd;
+        .status {
+          color: #bbb;
+          font-size: $gg-font-size-sm;
+        }
+      }
+      .content {
+        padding: 20px;
+        @include gg-flex-layout;
+        justify-content: space-between;
+        .text {
+          font-size: $gg-font-size-sm;
+          color: #868383;
+        }
+        .btn {
+          .btnItem {
+            background-color: $gg-main-color;
+            color: #fff;
+            height: 60px;
+            width: 120px;
+            padding: 0;
+            margin: 0;
+            font-size: $gg-font-size-sm;
+            @include gg-flex-layout;
+            margin-bottom: 10px;
+            border-radius: 30px;
+          }
+          .btnItem:nth-last-child(1) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

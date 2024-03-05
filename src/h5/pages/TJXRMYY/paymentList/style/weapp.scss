@@ -1,0 +1,137 @@
+.root-weapp {
+  @include _root;
+
+  .paymentList {
+    padding-bottom: 80px;
+    .userCard {
+      @include gg-flex-layout;
+      margin: 15px 0;
+      :global {
+        .container2 {
+          border: 0;
+          background-color: #2b6dc4;
+          width: 85%;
+          color: #fff;
+          font-size: $gg-font-size-sm;
+          justify-content: center;
+          .row1 {
+            align-items: flex-start;
+            .extra {
+              .extraIcon {
+                height: 30px;
+                width: 40px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    :global {
+      .at-tabs__header {
+        .at-tabs__item {
+          font-size: $gg-font-size-normal;
+          .at-tabs__item-underline {
+            background-color: $gg-main-color;
+            height: 8px;
+            width: 30%;
+            left: 35%;
+          }
+        }
+        .at-tabs__item--active {
+          color: $gg-main-color;
+        }
+      }
+    }
+
+    margin-bottom: 80px;
+    .dateSelect {
+      @include gg-flex-layout;
+      :global {
+        .at-list {
+          background-color: transparent;
+          border: 1px solid #bbb;
+          border-radius: 15px;
+          .at-list__item {
+            padding: 0 10px;
+            .at-list__item-content {
+              display: none;
+            }
+            .item-extra__info {
+              color: #000;
+            }
+            .item-extra__info::after {
+              position: absolute;
+              top: 25px;
+              right: 0;
+              content: "";
+              width: 0;
+              height: 0;
+              overflow: hidden;
+              font-size: 0;
+              line-height: 0;
+              border-width: 10px;
+              border-style: solid;
+              border-color: #bbb transparent transparent transparent;
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      bottom: 0;
+      background-color: #fff;
+      @include gg-flex-layout;
+      justify-content: space-between;
+      font-size: $gg-font-size-normal;
+      .paySum {
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+        .money {
+          color: #c9c917;
+        }
+      }
+      .payBtn {
+        height: 100%;
+        width: 300px;
+        background-color: $gg-main-color;
+        color: #fff;
+        font-size: $gg-font-size-normal;
+        line-height: 80px;
+        text-align: center;
+      }
+    }
+
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult .title {
+          font-size: $gg-font-size-sm;
+          color: #bbb;
+          font-weight: 400;
+        }
+      }
+    }
+    :global {
+      .root-web-comp_table_01 .table .cardhead {
+        background-color: #fff;
+      }
+      .root-web-comp_table_01 .table .flexCenter {
+        background-color: #f7f7f7;
+      }
+    }
+  }
+}
+
+:global {
+  .weui-picker__content {
+    font-size: $gg-font-size-lllg;
+  }
+  .weui-picker__hd {
+    font-size: $gg-font-size-lllg !important;
+  }
+}

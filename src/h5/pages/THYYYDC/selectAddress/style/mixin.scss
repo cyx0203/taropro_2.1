@@ -1,0 +1,52 @@
+@mixin _root {
+    .selectAddress{
+        padding:20px;
+        font-family:'Microsoft YaHei';
+        .addressList{
+            min-height: 85vh;
+            max-height: 85vh;
+            .block{
+                min-height: 50px;
+                border-radius: 10px;
+                padding:15px 20px;
+                margin-bottom: 25px;
+                display: grid;
+                background-color: #fff;
+            }
+            .content_row1{
+                font-size: 30px;
+                // font-weight: bold;
+                margin-bottom: 20px;
+                white-space: normal;
+            }
+            .content_row2{
+                font-size: 20px;
+                color:gray;
+                white-space: normal;
+            }
+            .bottom_icon{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 30px;
+            }
+            .content_bottom{
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                .bottom_col1{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        
+        
+        .footer{
+            position:fixed;
+            bottom:0;
+            width:70%;
+            margin:20px 0;
+        }
+    }
+}

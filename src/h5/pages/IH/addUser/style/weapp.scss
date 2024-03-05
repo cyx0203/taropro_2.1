@@ -1,0 +1,129 @@
+.root-weapp {
+  @include _root;
+  background-color: #f5f7f8;
+  height: 100vh;
+  .addUser {
+    @include gg-wing-blank(20px);
+    .idPicBox {
+      font-size: 28px;
+      color: #5f5f5f;
+      width: 705px;
+      height: 102px;
+      background-color: #fff;
+      background: #fafffe;
+      border-radius: 16px;
+      border: 2px dashed #cdcecf;
+      @include gg-flex-layout;
+      margin-top: 20px;
+    }
+    .tipsArea {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      font-size: $gg-font-size-sm;
+    }
+    .at-modal__container {
+      width: 700px;
+      .at-button {
+        margin-top: 30px;
+        width: 60%;
+      }
+    }
+    .input_index {
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      background-color: #fff;
+      padding: 0 32px;
+      .input_main {
+        @include gg-flex-layout;
+        justify-content: flex-start;
+        padding: 32px 20px;
+        border-bottom: 1px solid #ddd;
+        .input_title {
+          width: 125px;
+          font-size: 28px;
+          text-align: justify;
+          text-align-last: justify;
+          margin-right: 40px;
+          color: #5f5f5f;
+        }
+        .selector {
+          // width: 500px;
+          .selectorValue {
+            width: 440px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 28px;
+            color: #5f5f5f;
+          }
+        }
+        :global {
+          .at-input {
+            margin: 0;
+            padding: 0;
+            width: 440px;
+          }
+          .at-input input {
+            font-size: 28px;
+          }
+          .at-input::after {
+            border-bottom-width: 0;
+          }
+        }
+        .numberCheckBtn {
+          height: 63px;
+          margin: 0;
+          padding: 0;
+          font-size: 24px;
+          @include gg-flex-layout;
+          width: 180px;
+          color: #000;
+        }
+      }
+      .tipText {
+        padding: 0 50px 30px 50px;
+        font-size: $gg-font-size-sm;
+        .tipTitle {
+          color: red;
+          .at-icon {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    :global {
+      .at-button {
+        background-color: $gg-main-color;
+        color: #fff;
+        margin-bottom: 20px;
+        width: 560px;
+        height: 90px;
+        border-radius: 45px;
+        line-height: 90px;
+      }
+      .at-icon {
+        margin-right: 15px;
+      }
+      .GGTips {
+        padding: 0 30px;
+        .icon {
+          height: 35px;
+          width: 35px;
+        }
+        .at-row {
+          color: red;
+          .at-col .at-col-2 .flexCenter {
+            justify-content: flex-start;
+            width: 50px;
+          }
+          .rowCenter2 {
+            color: #bbb;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+}

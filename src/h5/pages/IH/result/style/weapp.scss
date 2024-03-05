@@ -1,0 +1,59 @@
+.root-weapp {
+  @include _root;
+
+  .result {
+    position: relative;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    .resultInfo {
+      margin: 40px 0;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      .infoItem {
+        @include gg-flex-layout;
+        justify-content: flex-start;
+        font-size: $gg-font-size-sm;
+        margin: 25px;
+        .label {
+          width: 25%;
+          color: #787878;
+        }
+        .value {
+          width: 75%;
+        }
+      }
+    }
+    .footerBtn {
+      position: fixed;
+      bottom: 120px;
+      left: 0;
+      right: 0;
+      width: 90%;
+      margin: 0 auto;
+      background-color: $gg-main-color;
+      height: 90px;
+      border-radius: 45px;
+      @include gg-flex-layout;
+      color: #fff;
+      font-size: $gg-font-size-lg;
+    }
+    .at-modal__overlay {
+      background-color: transparent;
+    }
+    .at-modal__container {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .at-modal__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // height: 60px;
+      min-height: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #fff;
+    }
+  }
+}

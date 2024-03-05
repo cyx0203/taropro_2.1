@@ -1,0 +1,15 @@
+.root-web-comp_indexes_01 {
+    @include _root;
+    
+    .charterBox {
+        position: fixed;
+        right: 0;
+        top: 168px;
+        width: 30px;
+        font-size: 24px;
+        line-height: 2;
+        background-color: #ffffff;
+        z-index: 100;
+        height: 100vh;
+      }
+}

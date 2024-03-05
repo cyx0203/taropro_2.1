@@ -1,0 +1,93 @@
+.root-weapp {
+  @include _root;
+
+  .selectCard {
+    height: calc(100vh - 2 * 16px);
+    overflow: hidden;
+    padding: 16px 0;
+    .listContent {
+      padding: 28px;
+      height: calc(78% - 2 * 28px);
+      overflow-x: auto;
+      .scaleCard {
+        transform: scale(0.9);
+        transition: all 0.3s;
+      }
+      .cardBox {
+        position: relative;
+        transition: all 0.3s;
+        height: 380px;
+        border-radius: 15px;
+        box-shadow: 0 0 12px 0 #bfc0c080;
+        .cardContent {
+          height: 100%;
+          border-radius: 15px;
+          padding: 0 32px;
+          position: relative;
+          .headline {
+            position: absolute;
+            top: 35px;
+            left: 32px;
+            font-size: 24px;
+          }
+          .infoList {
+            position: absolute;
+            bottom: 50px;
+            left: 32px;
+          }
+        }
+        .cardAction {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          line-height: 380px;
+          text-align: center;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 15px;
+          color: #fff;
+          letter-spacing: 5px;
+          font-size: 40px;
+        }
+      }
+      .result {
+        padding: 40px 80px;
+        :global {
+          .GGResult .title {
+            font-size: $gg-font-size-sm;
+            color: #bbb;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .footer {
+      height: calc(22% - 10px);
+      margin: 0 auto;
+      padding-top: 10px;
+      width: 90%;
+      .warmTips {
+        color: #bbb;
+        font-size: $gg-font-size-ssm;
+        text-align: center;
+      }
+      .btn {
+        margin-top: 20px;
+        width: 95%;
+        height: 90px;
+        border-radius: 45px;
+        border: 1px solid $gg-main-color;
+        font-size: $gg-font-size-md;
+        line-height: 80px;
+      }
+      .btn::after {
+        border: none;
+      }
+      .primary {
+        background-color: $gg-main-color;
+      }
+    }
+  }
+}

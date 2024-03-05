@@ -1,0 +1,94 @@
+.root-web {
+  @include _root;
+
+  .addUser {
+    @include gg-wing-blank(20px);
+    .input_index {
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      background-color: #fff;
+      .input_main {
+        @include gg-flex-layout;
+        justify-content:flex-start;
+        padding: 0px 20px;
+        border-bottom: 1px solid #ddd;
+        .input_title {
+          width: 160px;
+          font-size: $gg-font-size-normal;
+          .asterisk {
+            color: red;
+            margin-right: 10px;
+          }
+        }
+        .selector {
+          width: 500px;
+        }
+        .item-extra__info {
+          width: 160px;
+        }
+        .at-input::after {
+          border: 0;
+        }
+        .at-list::after {
+          border: 0;
+        }
+        .at-list__item::after {
+          border: 0;
+        }
+        .at-list__item .item-extra::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 25px;
+          left: 150px;
+          border-left: 5px solid #999;
+          border-bottom: 5px solid #999;
+          -webkit-transform: translate(0, -50%) rotate(-135deg);
+          transform: translate(0, -50%) rotate(-135deg);
+        }
+      }
+      .tipText {
+        padding: 0 50px 30px 50px;
+        font-size: $gg-font-size-sm;
+        .tipTitle {
+          color: red;
+          .at-icon {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    .at-button {
+      background-color: $gg-main-color;
+      color: #fff;
+    }
+    .at-icon {
+      margin-right: 15px;
+    }
+    .GGTips {
+      padding: 0 30px;
+      .icon {
+        height: 35px;
+        width: 35px;
+      }
+      .at-row {
+        color: red;
+        .at-col .at-col-2 .flexCenter {
+          justify-content:flex-start;
+          width: 50px;
+        }
+        .rowCenter2 {
+          color: #bbb;
+          padding: 10px 20px;
+        }
+      }
+    }
+    .weui-picker__overlay {
+      .weui-picker {
+        font-size: 17px;
+      }
+    }
+  }
+}

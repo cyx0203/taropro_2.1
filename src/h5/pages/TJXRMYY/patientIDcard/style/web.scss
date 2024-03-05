@@ -1,0 +1,45 @@
+.root-web {
+  @include _root;
+
+  .patientIDcard {
+    @include gg-flex-layout(column);
+    @include gg-wing-blank;
+    :global {
+      .card {
+        border: 0;
+        height: 400px;
+        position: relative;
+        .cardBottom {
+          background-color: #fff;
+        }
+        .card_extend {
+          position: absolute;
+          top: 18px;
+          left: 20px;
+          font-size: $gg-font-size-sssm;
+          font-weight: 600;
+        }
+      }
+      .at-button--primary {
+        background-color: #3e8af8;
+        border: 0;
+      }
+      .at-button {
+        background-color: #3e8af8;
+        color: #fff;
+        width: 95%;
+        margin: 20px;
+      }
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult .title {
+          font-size: $gg-font-size-sm;
+          color: #bbb;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

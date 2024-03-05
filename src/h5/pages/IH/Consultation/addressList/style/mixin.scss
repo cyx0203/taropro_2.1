@@ -1,0 +1,82 @@
+@mixin _root {
+    .GGWhiteSpace{
+        height: $gg-whitespace-md;
+    }
+
+    .GGWingBlank{
+        padding: $gg-wingblank-md;
+    }
+
+    .addressList_main{
+        margin-top: $gg-topbar-space;
+        width: 100%;
+        overflow-y: auto;
+        position: relative;
+    }
+    
+    .firstcontainer{
+        // height:200px;
+        background-color: #fff;
+        border-radius: $gg-border-radius-md;
+        margin:0 0 $gg-wingblank-md 0;
+        padding:$gg-wingblank-md;
+    }
+    
+    .padleft{
+        padding-left: $gg-wingblank-md;
+    }
+    
+    .atlist {
+        border:solid #808080 1px;
+        margin:$gg-wingblank-md;
+    }
+    
+    .bottombt {
+        // background-color:mediumseagreen;
+        color:white;
+        margin:$gg-wingblank-md ;
+        border-radius: 30px;
+    }
+    
+    .pay {
+        margin:$gg-wingblank-md;
+    }
+    
+    .add {
+        word-break: break-all;
+        white-space: pre-wrap;
+    }
+    
+    .defaultImg {
+        height: 35px;
+        position: relative;
+        top: -9.5px;
+        // left: -297rpx;
+        left:-17px;
+    }
+    
+    .dev_collection_modal_content {//提示框样式
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    
+    }
+    
+    .at-modal__content {
+        height: 50px;
+        min-height: 50px;
+    }
+    
+    .sub{ //副标题颜色
+        color:$gg-font-color-sub;
+    }
+    
+    .mainTitle { //主标题颜色
+        color:$gg-font-color-title;
+    }
+    
+    .textColor { //正文颜色
+        color:$gg-font-color-text;
+    }
+}

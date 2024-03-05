@@ -1,0 +1,79 @@
+@mixin _root {
+  .cardlist {
+    padding: $gg-wingblank-md;
+    .card {
+      margin: $gg-wingblank-md;
+      .cardTop {
+        background-color: $bgcolor-top;
+        padding: $gg-wingblank-md 0;
+        border-radius: $gg-border-radius-md $gg-border-radius-md 0 0;
+        align-items: flex-start;
+        // .cardTop_content{
+        // display: flex;
+        // align-items: center;
+        .cardTop_icon {
+          width: 16.67%;
+        }
+        .fontClass-title {
+          font-size: $font-size;
+          font-weight: bold;
+          word-break: break-all;
+          white-space: normal;
+        }
+        .fontClass-sm {
+          font-size: $font-size-sm;
+          display: flex;
+          justify-content: center;
+          width: 41.67%;
+        }
+        // }
+      }
+      .cardBottom {
+        background-color: $bgcolor-bottom;
+        border-radius: 0 0 $gg-border-radius-md $gg-border-radius-md;
+        padding: $gg-wingblank-md 0;
+        .label {
+          margin-left: $gg-wingblank-md;
+          white-space: nowrap;
+        }
+        .value {
+          word-break: break-all;
+          white-space: normal;
+        }
+        .btn {
+          margin: 0 $gg-wingblank-md;
+        }
+        .gridCenter {
+          display: grid;
+          align-items: center;
+        }
+        .arrow {
+          display: grid;
+          align-items: center;
+          justify-content: end;
+          .iconSize {
+            font-size: 110px;
+            color: green;
+          }
+        }
+        .card_footer {
+          font-size: $font-size;
+        }
+      }
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+
+      .flexCenter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .fontClass-content {
+        font-size: $font-size;
+      }
+    }
+  }
+}

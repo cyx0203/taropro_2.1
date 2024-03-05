@@ -1,0 +1,15 @@
+body,page {
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+}
+
+//禁止容器左右滑动
+#app {
+    overflow-x: hidden;
+}
+
+.html {
+    background-color: #F5F5F5;
+}
+@import "~taro-ui/dist/style/index.scss";
+@import './h5/styles/globalCPS.scss';

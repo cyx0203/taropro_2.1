@@ -1,0 +1,216 @@
+.root-web {
+  @include _root;
+
+  .applyInfo {
+    padding-bottom: 260px;
+
+    .headerArea {
+      width: 100%;
+      height: 130px;
+      border-top: 6px solid #5daddd;
+      @include gg-flex-layout;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 30px;
+
+      .title {
+        font-size: $gg-font-size-lllg;
+        font-weight: 600;
+        color: #2d66b0;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        display: flex;
+        align-items: center;
+
+        .tipsIcon {
+          width: 40px;
+          height: 40px;
+          margin-right: 11px;
+        }
+
+        font-size: $gg-font-size-sssm;
+        color: #696364;
+      }
+    }
+
+    .formArea {
+      background-color: #fff;
+      font-size: $gg-font-size-lg;
+      width: 100%;
+
+      :global {
+        .at-input {
+          display: flex;
+          align-self: flex-end;
+        }
+
+        .at-input::after {
+          border: 0;
+        }
+      }
+
+      .formItem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 5px solid #f0f0f0;
+
+        .displayNone {
+          :global {
+            .item-extra__icon-arrow {
+              display: none;
+            }
+          }
+        }
+
+        .formAsterisk {
+          width: 8px;
+          color: red;
+          margin: 0 20px;
+        }
+
+        .formLabel {
+          width: 260px;
+          font-size: $gg-font-size-lg;
+        }
+
+        .printRecord {
+          height: 80px;
+          line-height: 80px;
+          margin-left: 44px;
+          font-size: 28px;
+          width: calc(100% - 270px);
+          position: relative;
+
+          .printRecord_a {
+            font-size: 32px;
+          }
+
+          .printRecord_b {
+            padding-left: 15px;
+            color: #b7b6b6;
+            font-size: 32px;
+
+            .img {
+              margin-left: 105px;
+              font-size: 45px;
+              color: #cccccc;
+              position: absolute;
+              top: 15px;
+              right: 38px;
+            }
+          }
+        }
+
+        :global .at-list__item-content {
+          margin-right: 0;
+          margin-left: 4px;
+          display: none;
+        }
+
+        :global .at-list__item .item-extra__icon-arrow {
+          position: absolute;
+          top: -20px;
+        }
+
+        :global .at-list__item {
+          width: 220px;
+        }
+
+        :global .item-extra__info{
+          width: 340px;
+          text-align: left;
+        }
+      }
+    }
+
+    .warmTips {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+
+      .tipsIcon {
+        width: 40px;
+        height: 40px;
+        margin-right: 24px;
+      }
+
+      .tips {
+        flex: 1;
+        color: #a90504;
+        font-size: $gg-font-size-sssm;
+      }
+    }
+
+    .foot {
+      display: flex;
+      position: fixed;
+      bottom: 135px;
+      left: 0;
+      right: 0;
+      background: #fff;
+    }
+
+    .submitBtn {
+      //flex: 1;
+      //position: fixed;
+      //bottom: 135px;
+      //left: 10%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #5faddd;
+      width: 234px;
+      border-radius: 20px;
+      height: 75px;
+
+      .submitIcon {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+      }
+
+      :global {
+        .at-button__text {
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          font-size: $gg-font-size-lg;
+          color: #fff;
+          letter-spacing: 10px;
+        }
+      }
+    }
+
+    .nav {
+      justify-content: space-around;
+      height: 115px;
+      z-index: 999;
+
+      :global {
+        .item {
+          .label {
+            font-size: $gg-font-size-ssm;
+          }
+        }
+      }
+    }
+
+    :global .at-float-layout {
+      z-index: 999;
+    }
+
+  }
+}
+
+:global {
+  .weui-picker__content {
+    font-size: $gg-font-size-lllg;
+  }
+  .weui-picker__hd {
+    font-size: $gg-font-size-lllg !important;
+  }
+}

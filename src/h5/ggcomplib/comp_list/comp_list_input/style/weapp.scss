@@ -1,0 +1,9 @@
+.root-weapp-comp_list_input {
+    // @include _root;
+    .GGList {
+        .rightCol {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+}

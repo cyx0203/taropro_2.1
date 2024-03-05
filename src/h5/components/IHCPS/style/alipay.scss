@@ -1,0 +1,376 @@
+.root-alipay {
+    @include _root;
+  
+    .gpage_navbar {
+      height: 160px;
+      position: fixed;
+      bottom: 0px;
+    }
+  
+    .gpage_result {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      // width: 100%;
+    
+      .img {
+        width: 200px;
+      }
+    
+      .img2 {
+        width: 500px;
+      }
+    
+      .text {
+        margin-top: 10px;
+        font-size: $gg-font-size-md;
+        color: $gg-font-color-title;
+      }
+    }
+  
+    .gpage_modal_default_footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .at-modal__header {
+      background-color: $gg-main-light-secondary-color;
+    }
+    
+    .at-modal__container {
+      border-radius: 20px;
+    }
+  
+    .gpage_topbar_block {
+      width: 100%;
+      position: fixed;
+      z-index: 990;
+      top: 0px;
+      background-image: linear-gradient(
+        to bottom,
+        $gg-main-color,
+        $gg-main-light-color
+      );
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2px;
+      $searchContentColor: #fff;
+      :global {
+        .at-icon-search {
+          color: $searchContentColor;
+        }
+  
+        .at-search-bar__input-cnt {
+          background-color: $gg-main-light-secondary-color;
+        }
+  
+        .at-search-bar {
+          background-color: transparent;
+        }
+  
+        .at-search-bar__action {
+          background-color: $gg-main-light-secondary-color;
+          color: $searchContentColor;
+        }
+  
+        .at-icon at-icon-close-circle {
+          color: $searchContentColor;
+        }
+        .at-search-bar__clear {
+          background-color: $gg-main-light-secondary-color;
+        }
+  
+        .at-search-bar__placeholder-wrap {
+          background-color: $gg-main-light-secondary-color;
+        }
+  
+        .at-search-bar__placeholder {
+          color: $searchContentColor;
+        }
+  
+        .at-search-bar__input {
+          color: $searchContentColor;
+        }
+        .at-search-bar::after {
+          border-bottom: 0;
+        }
+        .at-icon-close-circle {
+          color: $searchContentColor;
+        }
+      }
+  
+      .searchBar {
+        width: 100%;
+      }
+  
+      .gpage_infor {
+        color: #fff;
+        font-size: $gg-font-size-md;
+      }
+  
+      .gpage_identification {
+        width: 20px;
+        height: 20px;
+        padding-right: 5px;
+      }
+  
+      .gpage_doctor_img {
+        width: 80px;
+        height: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+  
+      .gpage_doctor_main {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 100%;
+        color: #fff;
+      }
+  
+      .gpage_doctor_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+      }
+  
+      .gpage_doctor_infor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+      }
+  
+      .gpage_doctor_identification_block {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        font-size: $gg-font-size-sssm;
+      }
+  
+      .gpage_doctor_infor_name {
+        font-size: $gg-font-size-md;
+        margin-right: 20px;
+      }
+  
+      .gpage_doctor_infor_identity {
+        font-size: $gg-font-size-ssm;
+      }
+  
+      .gpage_doctor_msg {
+        position: absolute;
+        right: 20px;
+      }
+  
+      .gpage_patient_main {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 100%;
+        color: #fff;
+      }
+  
+      .gpage_patient_img {
+        width: 80px;
+        height: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+  
+      .gpage_patient_infor {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+  
+      .gpage_patient_infor_name {
+        font-size: $gg-font-size-md;
+        margin-right: 20px;
+      }
+  
+      .gpage_patient_infor_extra1 {
+        font-size: $gg-font-size-ssm;
+      }
+  
+      .gpage_patient_infor_extra2 {
+        font-size: $gg-font-size-ssm;
+      }
+    }
+    .gpage_switch {
+      $blockHeight: 60px;
+      $mainWidth: 160px;
+      $blockWidth: 130px;
+      $offset_left: -40px;
+      $offset_right: 30px;
+      $brdx: 40px;
+      font-size: 24px;
+      @mixin flexCenter() {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      width: $mainWidth;
+      position: relative;
+      @include flexCenter();
+  
+      @mixin mainMixed() {
+        width: $mainWidth;
+        height: $blockHeight;
+        border-radius: $brdx;
+        position: absolute;
+        box-shadow: 1px 1px 1px #bbb;
+      }
+  
+      .main_close {
+        @include mainMixed();
+        background-color: #ffffff;
+        animation: ani_main_to_close 0.5s;
+      }
+  
+      .main_open {
+        @include mainMixed();
+        background-color: $gg-main-light-secondary-color;
+        animation: ani_main_to_open 0.5s;
+      }
+  
+      @mixin blockMixed() {
+        color: $gg-font-color-title;
+        width: $blockWidth;
+        height: $blockHeight;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 1px #bbb;
+        border-radius: $brdx;
+        @include flexCenter();
+        z-index: 2;
+      }
+  
+      .block_close {
+        @include blockMixed();
+        margin-left: $offset_left;
+        animation: ani_block_to_close 0.5s;
+      }
+  
+      .block_open {
+        @include blockMixed();
+        margin-left: $offset_right;
+        animation: ani_block_to_open 0.5s;
+      }
+  
+      @keyframes ani_block_to_open {
+        from {
+          margin-left: $offset_left;
+        }
+        to {
+          margin-left: $offset_right;
+        }
+      }
+  
+      @keyframes ani_block_to_close {
+        from {
+          margin-left: $offset_right;
+        }
+        to {
+          margin-left: $offset_left;
+        }
+      }
+  
+      @keyframes ani_main_to_open {
+        from {
+          background-color: #fff;
+        }
+        to {
+          background-color: $gg-main-light-secondary-color;
+        }
+      }
+  
+      @keyframes ani_main_to_close {
+        from {
+          background-color: $gg-main-light-secondary-color;
+        }
+        to {
+          background-color: #fff;
+        }
+      }
+    }
+    .gpage_dropdown {
+      position: relative;
+      font-size: 30px;
+      .current {
+        display: flex;
+        // justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        min-width: 165px;
+        max-width: 265px;
+        text-align: center;
+        margin-left: 15px;
+        height: 80px;
+        .chevronAni {
+          transition: 0.2s;
+          transform-origin: center;
+          transform: rotateZ(180deg);
+        }
+        .chevron {
+          transition: 0.2s;
+          transform-origin: center;
+          transform: rotateZ(0deg);
+        }
+      }
+      .aniShow {
+        height: 500px !important;
+        transition: height 0.2s linear;
+  
+        &.up {
+          height: 0 !important;
+        }
+        &.down {
+          height: 500px !important;
+        }
+        &.up {
+          height: 0 !important;
+        }
+      }
+      .dataList {
+        height: 0;
+        overflow: auto;
+        z-index: 99;
+        background-color: #fff;
+        border-radius: 0 0 15px 15px;
+        position: absolute;
+        top: 70px;
+        left: -15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // position: relative;
+        .item {
+          width: 285px;
+          padding: 10px 0px;
+          letter-spacing: 5px;
+          margin: 0 30px;
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+          .deptIcon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+}

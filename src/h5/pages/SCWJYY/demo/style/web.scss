@@ -1,0 +1,130 @@
+.root-web {
+  @include _root;
+
+  .demo {
+    .selectDate {
+      .datebar {
+        margin: 0;
+        :global {
+          .barGp {
+            margin: 0;
+            .item {
+              padding: 80px;
+              height: 160px;
+              margin: 0;
+              justify-content: space-around;
+              .label {
+                font-size: $gg-font-size-llg;
+              }
+              .label:first-child {
+                margin-bottom: 15px;
+              }
+            }
+            .item-active {
+              border: 0;
+              background-color: red;
+              color: blue;
+            }
+          }
+        }
+      }
+    }
+    .doctorCard {
+      :global {
+        .cardlist {
+          .card {
+            background-color: gray;
+            .topPart {
+              .flexCenter {
+                margin-right: 25px;
+                .taro-img__mode-scaletofill {
+                  border-radius: 25%;
+                }
+              }
+              .centerRow {
+                .row1 {
+                  justify-content: flex-start;
+                  margin-bottom: 10px;
+                  .tag {
+                    background-color: $gg-main-color;
+                    color: #fff;
+                    border-radius: 10px;
+                    padding: 0 15px;
+                    height: 50px;
+                    margin-left: 50px;
+                  }
+                }
+                .row2 {
+                  font-size: $gg-font-size-ssm;
+                }
+              }
+              .rightRow .btn {
+                background-color: red;
+                color: blue;
+                padding: 0px;
+                border-radius: 30px;
+                height: 50px;
+                line-height: 50px;
+              }
+            }
+            .bottomPart {
+              font-size: $gg-font-size-ssm;
+              .at-row .labelAndValue .label {
+                width: 200px;
+              }
+              .labelAndValue {
+                font-size: $gg-font-size-sm;
+              }
+            }
+          }
+        }
+      }
+    }
+    .floatlayout {
+        .time_dept {
+          @include gg-flex-layout;
+          justify-content: space-between;
+          font-size: $gg-font-size-ssm;
+          margin-bottom: 20px;
+        }
+        :global {
+          .table {
+            font-size: $gg-font-size-ssm;
+            .cardhead {
+              padding: 10px 0;
+              border-bottom: 1px solid #bbb;
+              background-color: #f7f7f7;
+              border-radius: 0;
+            }
+            .breakWord {
+              background-color: #000;
+            }
+            .cardcontent .btn {
+              background-color: blue;
+              color: red;
+              padding: 0;
+              border-radius: 30px;
+              height: 50px;
+              line-height: 50px;
+              font-size: $gg-font-size-sm;
+              width: 120px;
+            }
+            .flexCenter {
+              background-color: #fff;
+            }
+          }
+        }
+      
+    }
+    .result {
+      padding: 100px;
+      :global {
+        .GGResult .title {
+          font-size: $gg-font-size-sm;
+          color: #bbb;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
